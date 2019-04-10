@@ -2,8 +2,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-	color: #888;
-	line-height: 160%;
+		color: #888;
+		line-height: 160%;
 }
 
 strong { font-weight: 500; }
@@ -41,13 +41,13 @@ img { max-width: 100%; height: auto; }
 
 .section-container { margin: 0 auto;}
 .section-container .col-izq {margin-top: -120px;}
-.section-container .col-der {margin-top: -40px; padding-left: 5%;}
+.section-container .col-der {margin-top: -90px; padding-left: 5%;}
 .section-description { margin-top: 60px; padding-bottom: 10px; }
 .section-description p { margin-top: 20px; padding: 0 120px; }
 
 
 /***** Divider *****/
-
+.divider-0 { padding: 10px 0 10px 0; }
 .divider-1 { padding: 25px 0 15px 0; }
 .divider-2 { padding: 65px 0 15px 0; }
 
@@ -120,13 +120,13 @@ ul.navbar-nav {
 
 
 /***** Top content *****/
-
-.top-content { padding: 60px 0 150px 0; background: url('../img/backgrounds/1.jpg') center top no-repeat;}
-
+#home { background: url('../img/backgrounds/2.jpg') center top no-repeat;}
+#causa { background: url('../img/backgrounds/1.jpg') center top no-repeat;}
+.top-content { padding: 60px 0 150px 0;}
 .top-content .text { padding-top: 60px; color: #fff; }
-.top-content .text h1 { color: #fff; font-weight: 700; font-size: 42px; margin: 5px 10px;}
-.top-content .text h4 { letter-spacing: 12px;}
-.top-content .text h3 { margin: 0px 10px;}
+.top-content .text h1 { color: #fff; font-weight: 300; font-size: 42px; margin: 5px 10px;}
+.top-content .text h4 { letter-spacing: 12px; font-weight: 100;}
+.top-content .text h3 { margin: 0px 10px; font-weight: 100;}
 .top-content .text h3 small { font-style: italic; color: #fff; padding: 0 5px;}
 
 .top-content .description { margin: 30px 0 10px 0; }
@@ -136,10 +136,15 @@ ul.navbar-nav {
 .registro {background: #f7f7f6; text-align: center;}
 .registro .container {margin-top: 10%;}
 .registro .panel {border: 1px solid #eaeaea; border-radius: 0; }
+.registro .panel-body {padding: 15px 40px; }
 .registro .btn-info {text-transform: uppercase; padding: 10px 50px;font-weight: 100; margin: 10px 0;}
-.registro .btn-facebook {text-transform: uppercase; padding: 15px 10px; }
+.registro .btn-facebook {text-transform: uppercase; padding: 12px 10px; }
 .registro .btn-facebook i {margin: 0 8px;}
+.registro .btn-google {text-transform: uppercase; padding: 12px 10px; }
+.registro .btn-google i {margin: 0 8px;}
 .registro form {padding-top: 5%;}
+.registro .olvido {color:#888; text-decoration: underline;}
+.registro .olvido:hover {color: #8fffde}
 .registro .form-control {
     display: block;
     width: 100%;
@@ -165,14 +170,46 @@ ul.navbar-nav {
     line-height: 1;
     color: #555;
     text-align: center;
+		background-color: transparent;
+		border: 0;
+		border-left: 1px solid #e4e4e4;
+		border-top: 1px solid #e4e4e4;
+		border-bottom: 1px solid #e4e4e4;
+		border-radius: 0;
+}
+.interno {background: #fff; color: #1e1e1e;}
+.interno .contenedor {margin-top: 82px;}
+.interno .subheader {background: #f7f7f6; border-bottom: 1px solid #dadada;}
+.interno .subheader .container, .interno .contenido .container {padding: 0 10%;}
+.interno .usuario { width: 370px; margin-bottom: -70px;margin-top: -35px; padding-right: 5%;}
+.interno .breadcrumb {
+	margin-bottom: 20px;
+	list-style: none;
+	background-color: transparent;
+	border-radius: 0;
+	padding: 8px 0;
+}
+.interno .nav-tabs {
+	border-bottom: 0;
+}
+.interno .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	color: #555;
+	cursor: default;
 	background-color: transparent;
 	border: 0;
-	border-left: 1px solid #e4e4e4;
-	border-top: 1px solid #e4e4e4;
-	border-bottom: 1px solid #e4e4e4;
-    border-radius: 0;
+	/* border-bottom-color: transparent; */
+	border-bottom: 2px solid #00e7c1;
 }
-
+.interno .nav-tabs>li>a {
+	margin-right: 2px;
+	line-height: 1.42857143;
+	border: 0;
+	border-radius: 0;
+	color:#999;
+}
+.interno .nav-tabs>li>a:hover {
+	color:#555;
+}
 
 /***** Features *****/
 
@@ -181,12 +218,14 @@ ul.navbar-nav {
 .features-box h3 { margin-top: 0; padding: 0 0 10px 0; }
 
 /***** Buttons *****/
-.btn-facebook { color: #fff; background-color: #006fa6; border-color: #006fa6; transition: ease-in-out .5s; border-radius: 0; }
-.btn-facebook:hover, .btn-facebook:active, .btn-facebook:focus {color: #fff; background-color: #005d8b; border-color: #006fa6; } 
+.btn-facebook { color: #fff; background-color: #395692; border-color: #395692; transition: ease-in-out .5s; border-radius: 0; }
+.btn-facebook:hover, .btn-facebook:active, .btn-facebook:focus {color: #fff; background-color: #27447f; border-color: #395692; } 
 .btn-twitter { color: #fff; background-color: #35ade4; border-color: #35ade4; transition: ease-in-out .5s; }
 .btn-twitter:hover, .btn-twitter:active, .btn-twitter:focus {color: #fff; background-color: #2797cb; border-color: #35ade4; }
 .btn-whatsapp { color: #fff; background-color: #25d366; border-color: #25d366; transition: ease-in-out .5s; }
 .btn-whatsapp:hover, .btn-whatsapp:active, .btn-whatsapp:focus {color: #fff; background-color: #1cad52; border-color: #25d366; }
+.btn-google { color: #fff; background-color: #de4b39; border-color: #de4b39; transition: ease-in-out .5s; border-radius: 0; }
+.btn-google:hover, .btn-google:active, .btn-google:focus {color: #fff; background-color: #bb3c2d; border-color: #de4b39; } 
 .fa-2x {font-size: 1.5em;}
 .btn-group-justified .btn { padding: 10px 30px; border-radius: 0px; }
 .btn-group-justified .btn-group { margin: 0 5px; }
