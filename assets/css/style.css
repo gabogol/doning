@@ -145,40 +145,9 @@ ul.navbar-nav {
 .registro form {padding-top: 5%;}
 .registro .olvido {color:#888; text-decoration: underline;}
 .registro .olvido:hover {color: #8fffde}
-.registro .form-control {
-    display: block;
-    width: 100%;
-    height: 34px;
-    padding: 25px 15px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #eaeaea;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
-.registro .input-group-addon {
-    padding: 6px 12px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-    color: #555;
-    text-align: center;
-		background-color: transparent;
-		border: 0;
-		border-left: 1px solid #e4e4e4;
-		border-top: 1px solid #e4e4e4;
-		border-bottom: 1px solid #e4e4e4;
-		border-radius: 0;
-}
+
 .interno {background: #fff; color: #1e1e1e;}
-.interno .contenedor {margin-top: 82px;}
+.interno .contenedor {margin-top: 82px; padding-bottom: 10%}
 .interno .subheader {background: #f7f7f6; border-bottom: 1px solid #dadada;}
 .interno .subheader .container, .interno .contenido .container {padding: 0 10%;}
 .interno .usuario { width: 370px; margin-bottom: -70px;margin-top: -35px; padding-right: 5%;}
@@ -210,6 +179,26 @@ ul.navbar-nav {
 .interno .nav-tabs>li>a:hover {
 	color:#555;
 }
+.interno .btn-info {
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+.interno .numero {
+	border-radius: 100%;
+	border: 2px solid #dadada;
+	width: 50px;
+	height: 50px;
+	line-height: 45px;
+	font-size: 28px;
+	font-weight: 400;
+	overflow: hidden;
+	text-align: center;
+	float: left;
+}
+.interno .pre-evento {
+	color: #777;
+	font-weight: 500;
+}
 
 /***** Features *****/
 
@@ -237,11 +226,47 @@ ul.navbar-nav {
 .btn-success:hover, .btn-success:active, .btn-success:focus {color: #fff; background-color: #02a79f; border-color: #00e7c1;}
 .btn-info { color: #fff; background-color: #02a79f; border-color: #02a79f; padding: 10px 15px; border-radius: 0px;}
 .btn-info:hover, .btn-info:active, .btn-info:focus {color: #fff; background-color: #09807a; border-color: #00e7c1;}
+.btn-primary { color: #fff; background-color: #999; border-color: #999; padding: 10px 20px; border-radius: 0px;text-transform: uppercase;}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {color: #fff; background-color: #777; border-color: #777;}
 
 .donar {
 	padding: 20px 30px;
 	border: 1px solid #888;
 	margin: 20px 0;
+}
+
+/**** Inputs ***/
+.form-control {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 25px 15px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #eaeaea;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.input-group-addon {
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	color: #555;
+	text-align: center;
+	background-color: transparent;
+	border: 0;
+	border-left: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	border-radius: 0;
 }
 
 /* Chart */
