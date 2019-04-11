@@ -149,8 +149,8 @@ ul.navbar-nav {
 .interno {background: #fff; color: #1e1e1e;}
 .interno .contenedor {margin-top: 82px; padding-bottom: 10%}
 .interno .subheader {background: #f7f7f6; border-bottom: 1px solid #dadada;}
-.interno .subheader .container, .interno .contenido .container {padding: 0 10%;}
-.interno .usuario { width: 370px; margin-bottom: -70px;margin-top: -35px; padding-right: 5%;}
+.interno .subheader .container, .interno .contenido .container {padding: 0 5%;}
+.interno .usuario { width: 390px; margin-bottom: -70px;margin-top: -35px; padding-right: 5%;}
 .interno .breadcrumb {
 	margin-bottom: 20px;
 	list-style: none;
@@ -198,6 +198,9 @@ ul.navbar-nav {
 .interno .pre-evento {
 	color: #777;
 	font-weight: 500;
+}
+.interno .lleva {
+	margin: 10px 0;
 }
 
 /***** Features *****/
