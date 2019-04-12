@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
 		color: #888;
 		line-height: 160%;
 }
@@ -134,7 +134,6 @@ ul.navbar-nav {
 .top-content .description a { color: #fff; border-bottom: 1px dotted #fff; }
 .top-content .description a:hover, .top-content .description a:focus { color: #fff; border: 0; }
 .registro {background: #f7f7f6; text-align: center;}
-.registro .container {margin-top: 10%;}
 .registro .panel {border: 1px solid #eaeaea; border-radius: 0; }
 .registro .panel-body {padding: 15px 40px; }
 .registro .btn-info {text-transform: uppercase; padding: 10px 50px;font-weight: 100; margin: 10px 0;}
@@ -146,8 +145,8 @@ ul.navbar-nav {
 .registro .olvido {color:#888; text-decoration: underline;}
 .registro .olvido:hover {color: #8fffde}
 
-.interno {background: #fff; color: #1e1e1e;}
-.interno .contenedor {margin-top: 82px; padding-bottom: 10%}
+.interno {background: #fff; color: #888;}
+.interno .contenedor {padding-bottom: 10%}
 .interno .subheader {background: #f7f7f6; border-bottom: 1px solid #dadada;}
 .interno .subheader .container, .interno .contenido .container {padding: 0 5%;}
 .interno .usuario { width: 390px; margin-bottom: -70px;margin-top: -35px; padding-right: 5%;}
@@ -202,6 +201,30 @@ ul.navbar-nav {
 .interno .lleva {
 	margin: 10px 0;
 }
+.interno .evento-img {
+	width: 100%;
+	height: 180px;
+	background: url('../img/bgresumen.png') center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+.interno .panel-resumen .panel-body {
+	padding: 50px;
+}
+.interno .panel-donacion {
+	background: #f7f7f6;
+	padding: 15px 10px 0 10px;
+}
+.interno .table-donacion .table>tbody>tr>td {
+	border: 0;
+}
+.interno .donacion-col {
+	padding-right: 50px;
+}
+.interno .panel-evento {
+	padding: 35px;
+}
 
 /***** Features *****/
 
@@ -231,6 +254,8 @@ ul.navbar-nav {
 .btn-info:hover, .btn-info:active, .btn-info:focus {color: #fff; background-color: #09807a; border-color: #00e7c1;}
 .btn-primary { color: #fff; background-color: #999; border-color: #999; padding: 10px 20px; border-radius: 0px;text-transform: uppercase;}
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {color: #fff; background-color: #777; border-color: #777;}
+.btn-alert { color: #fff; background-color: #02a79f; border-color: #02a79f; padding: 10px 65px; border-radius: 0px;font-weight: 500;}
+.btn-alert:hover, .btn-alert:active, .btn-alert:focus {color: #fff; background-color: #09807a; border-color: #02a79f;}
 
 .donar {
 	padding: 20px 30px;
@@ -271,17 +296,12 @@ ul.navbar-nav {
 	border-bottom: 1px solid #e4e4e4;
 	border-radius: 0;
 }
-.interno .evento-img {
+
+.select {
 	width: 100%;
-	height: 180px;
-	background: url('../img/bgresumen.png') center no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	overflow: hidden;
+	display: block;
 }
-.interno .panel-resumen .panel-body {
-	padding: 50px;
-}
+
 
 /* Chart */
 .single-chart {
