@@ -271,6 +271,17 @@ ul.navbar-nav {
 	border-bottom: 1px solid #e4e4e4;
 	border-radius: 0;
 }
+.interno .evento-img {
+	width: 100%;
+	height: 180px;
+	background: url('../img/bgresumen.png') center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+.interno .panel-resumen .panel-body {
+	padding: 50px;
+}
 
 /* Chart */
 .single-chart {
