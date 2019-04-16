@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doning</title>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+</head>
+
+<body class="interno">
+
+    <!-- Top menu -->
+    <nav class="navbar navbar-light" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <h1 class="text-hide">Doning</h1>
+                </a>
+            </div>
+        </div>
+        <div class="usuario pull-right">
+            <div class="col-sm-8">
+                <h4>Nombre de Usuario</h4>
+                <a href="">Editar perfil</a><span> | </span><a href="">Cerrar sesión</a>
+            </div>
+            <div class="col-sm-4">
+                <img src="assets/img/user.svg" class="text-right" alt="" width="60px">
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenedor">
+        <div class="subheader">
+            <div class="container">
+                <div class="row">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="active">Eventos</a></li>
+                    </ol>
+                </div>
+                <div class="row">
+                    <h2 class="titulo">Eventos</h2>
+                </div>
+                <div class="divider-1"></div>
+                <div class="row">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a href="actividad.html" target="_self">Actividad</a></li>
+                        <li class="active"><a href="eventos.html" target="_self">Eventos</a></li>
+                        <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
+                        <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
+                        <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="divider-1"></div>
+        <div class="contenido">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!--1-->
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="numero">1</div>
+                            </div>
+                            <div class="media-body">
+                                <h4>Ingresa tus datos</h4>
+                                <div class="divider-0"></div>
+                                <p class="pre-evento">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                                    enim deserunt officia
+                                    eum vitae cum esse accusantium, necessitatibus, vel saepe quis eveniet fugiat fugit
+                                    architecto. Esse rem aut at corrupti.</p>
+                                <hr>
+                                <form>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user-o fa-fw"></i></span>
+                                        <input type="text" class="form-control" id="NombreCelebracion"
+                                            placeholder="Nombre de la celebración">
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="fa fa-calendar-o fa-fw"></i></span>
+                                        <input type="text" class="form-control" id="Fecha" placeholder="Fecha">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group input-group">
+                                                <span class="input-group-addon"><i
+                                                        class="fa fa-user-o fa-fw"></i></span>
+                                                <input type="text" class="form-control" id="Organizador"
+                                                    placeholder="Organizador">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group input-group">
+                                                <span class="input-group-addon"><i
+                                                        class="fa fa-cloud-upload fa-fw"></i></span>
+                                                <input type="text" class="form-control" id="Upload"
+                                                    placeholder="Sube una imagen">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="fa fa-comment-o fa-fw"></i></span>
+                                        <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--fin 1-->
+                        <!--2-->
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="numero">2</div>
+                            </div>
+                            <div class="media-body">
+                                <h4>Elige una causa</h4>
+                                <div class="divider-0"></div>
+                                <p class="pre-evento">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                                    enim deserunt officia
+                                    eum vitae cum esse accusantium, necessitatibus, vel saepe quis eveniet fugiat fugit
+                                    architecto. Esse rem aut at corrupti.</p>
+                                <hr>
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" class="input-lg">
+                                                    <h5>Un lugar en la ciudad</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                </label>
+                                                <a href="" class="btn btn-success btn-sm btn-block">Ver</a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="single-chart">
+                                                    <svg viewBox="0 0 39 39" class="circular-chart green">
+                                                        <path class="circle-bg"
+                                                            d="M18 2.0845
+                                                                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <path class="circle" stroke-dasharray="25, 100"
+                                                            d="M18 2.0845
+                                                                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <text x="18" y="20.35" class="percentage">24%</text>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="assets/img/causa-ev2.png" alt="" style="margin:12px auto;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-6">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" class="input-lg">
+                                                        <h5>Un lugar en la ciudad</h5>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    </label>
+                                                    <a href="" class="btn btn-success btn-sm btn-block">Ver</a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="single-chart">
+                                                        <svg viewBox="0 0 39 39" class="circular-chart green">
+                                                            <path class="circle-bg"
+                                                                d="M18 2.0845
+                                                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <path class="circle" stroke-dasharray="25, 100"
+                                                                d="M18 2.0845
+                                                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <text x="18" y="20.35" class="percentage">24%</text>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="assets/img/causa-ev2.png" alt="" style="margin:12px auto;">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" class="input-lg">
+                                                            <h5>Un lugar en la ciudad</h5>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                        </label>
+                                                        <a href="" class="btn btn-success btn-sm btn-block">Ver</a>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="single-chart">
+                                                            <svg viewBox="0 0 39 39" class="circular-chart green">
+                                                                <path class="circle-bg"
+                                                                    d="M18 2.0845
+                                                                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                <path class="circle" stroke-dasharray="25, 100"
+                                                                    d="M18 2.0845
+                                                                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                <text x="18" y="20.35" class="percentage">24%</text>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <img src="assets/img/causa-ev2.png" alt="" style="margin:12px auto;">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label class="checkbox-inline">
+                                                                <input type="checkbox" class="input-lg">
+                                                                <h5>Un lugar en la ciudad</h5>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                            </label>
+                                                            <a href="" class="btn btn-success btn-sm btn-block">Ver</a>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="single-chart">
+                                                                <svg viewBox="0 0 39 39" class="circular-chart green">
+                                                                    <path class="circle-bg"
+                                                                        d="M18 2.0845
+                                                                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                    <path class="circle" stroke-dasharray="25, 100"
+                                                                        d="M18 2.0845
+                                                                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                    <text x="18" y="20.35" class="percentage">24%</text>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <img src="assets/img/causa-ev2.png" alt="" style="margin:12px auto;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                            <div class="col-md-6">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox" class="input-lg">
+                                                                    <h5>Un lugar en la ciudad</h5>
+                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                                </label>
+                                                                <a href="" class="btn btn-success btn-sm btn-block">Ver</a>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="single-chart">
+                                                                    <svg viewBox="0 0 39 39" class="circular-chart green">
+                                                                        <path class="circle-bg"
+                                                                            d="M18 2.0845
+                                                                                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                        <path class="circle" stroke-dasharray="25, 100"
+                                                                            d="M18 2.0845
+                                                                                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                        <text x="18" y="20.35" class="percentage">24%</text>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <img src="assets/img/causa-ev2.png" alt="" style="margin:12px auto;">
+                                                            </div>
+                                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!--fin 2-->
+                        </div>
+                        <!--4-->
+                        <div class="media hidden">
+                            <div class="media-left">
+                                <div class="numero">4</div>
+                            </div>
+                            <div class="media-body">
+                                <h4>Invita a tus amigos</h4>
+                                <div class="divider-0"></div>
+                                <p class="pre-evento">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                                    enim deserunt officia
+                                    eum vitae cum esse accusantium, necessitatibus, vel saepe quis eveniet fugiat fugit
+                                    architecto. Esse rem aut at corrupti.</p>
+                                <hr>
+                                <a class="btn btn-facebook btn-block"><i class="fa fa-facebook-square fa-2x pull-left"
+                                        aria-hidden="true"></i> Invitar amigos con facebook</a>
+                                <a class="btn btn-google btn-block"><i class="fa fa-google fa-2x pull-left"
+                                        aria-hidden="true"></i> Invitar amigos con Google</a>
+                                <div class="divider-0"></div>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-info" role="button">Guardar</a>
+                                    <a href="#" class="btn btn-info" role="button">Crear Evento</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fin 4-->
+
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 pull-left">
+                    <img src="assets/img/logo.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-8 pull-right text-right">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" target="_blank"><img src="assets/img/fb.svg" width="25px" alt=""
+                                    style="margin:5px;"></a>
+                            <a href="#" target="_blank"><img src="assets/img/tw.svg" width="25px" alt=""
+                                    style="margin:5px;"></a>
+                        </div>
+                        <div class="col-sm-12">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Somos</a></li>
+                                <li><a href="#" class="active">Causas</a></li>
+                                <li><a href="#">Inscribe una causa</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row divider-2">
+                <div class="col-sm 12 text-center">
+                    2019 © Doning - Todos los derechos reservados
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/retina-1.1.0.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+</body>
+
+</html>
