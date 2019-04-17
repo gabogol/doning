@@ -129,18 +129,18 @@ ul.navbar-nav {
 #home { background: url('../img/backgrounds/4.jpg') center bottom no-repeat; background-size: cover;}
 .top-content { padding: 60px 0 150px 0;}
 .top-content .text { padding-top: 60px; color: #fff; }
-.top-content .text2 { padding: 20px 10px; position: fixed; right: 30px; top: 15%; color: #02a79f; background: #f7f7f7d4;; border: 1px dotted #f7f7f7;z-index: 99;}
-.top-content .text2 a {text-decoration: none; color:#02a79f; }
 .top-content .text h1 { color: #fff; font-weight: 300; font-size: 42px; margin: 5px 10px;}
 .top-content .text .big {font-size: 43px; font-weight: 700; padding: 20px 29px;}
 .top-content .text h4 { letter-spacing: 12px; font-weight: 100;}
 .top-content .text h3 { margin: 0px 10px; font-weight: 100;}
 .top-content .text h3 small { font-style: italic; color: #fff; padding: 0 5px;}
-
 .top-content .description { margin: 30px 0 10px 0; }
 .top-content .description p { opacity: 0.8; }
 .top-content .description a { color: #fff; border-bottom: 1px dotted #fff; }
 .top-content .description a:hover, .top-content .description a:focus { color: #fff; border: 0; }
+
+.icon-box {width: 220px; margin-top: -750px; margin-right: -40px; padding: 20px 10px; position: sticky; float: right; right: 0; top: 15%; color: #02a79f; background: #f7f7f7d4;; border: 1px dotted #f7f7f7;z-index: 99;}
+.icon-box a {text-decoration: none; color:#02a79f;}
 
 /********  Home  *********/
 .home .section-container .col-izq {margin-top: -50px;}
