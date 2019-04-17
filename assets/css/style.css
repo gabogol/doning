@@ -226,6 +226,19 @@ ul.navbar-nav {
 .home .btn-lg {
 	padding: 20px 15px;
 }
+.home .mascara {
+	background: rgba(247,247,247,0);
+	background: -moz-linear-gradient(top, rgba(247,247,247,0) 0%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247,247,247,0)), color-stop(51%, rgba(247,247,247,1)), color-stop(100%, rgba(247,247,247,1)));
+	background: -webkit-linear-gradient(top, rgba(247,247,247,0) 0%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%);
+	background: -o-linear-gradient(top, rgba(247,247,247,0) 0%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%);
+	background: -ms-linear-gradient(top, rgba(247,247,247,0) 0%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%);
+	background: linear-gradient(to bottom, rgba(247,247,247,0) 0%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f7f7f7', GradientType=0 );
+	height: 220px;
+	position: relative;
+	margin-top:-230px;
+}
 .thumbnail {border: 0; padding: 4px 0;}
 .thumbnail .caption {padding: 10px 20px;}
 
@@ -247,7 +260,8 @@ ul.navbar-nav {
 .interno .contenedor {padding-bottom: 10%}
 .interno .subheader {background: #f7f7f6; border-bottom: 1px solid #dadada;}
 .interno .subheader .container, .interno .contenido .container {padding: 0 5%;}
-.interno .usuario { width: 390px; margin-bottom: -70px;margin-top: -35px; padding-right: 5%;}
+.interno .usuario { width: 390px; margin-top: -35px; padding-right: 5%;}
+.interno .navbar .btn-success {margin-top:15px;}
 .interno .breadcrumb {
 	margin-bottom: 20px;
 	list-style: none;
@@ -301,11 +315,28 @@ ul.navbar-nav {
 }
 .interno .evento-img {
 	width: 100%;
-	height: 180px;
-	background: url('../img/bgresumen.png') center no-repeat;
+	height: 170px;
+	background: url('../img/bgresumen.png') center bottom no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	overflow: hidden;
+}
+.interno .mailing-img {
+	width: 100%;
+	height: 190px;
+	background: url('../img/bgmailing.jpg') center bottom no-repeat;
+	background-size: auto;
+	overflow: hidden;
+}
+.interno .col-sticky {
+	position: sticky;
+	right: 0;
+	top: 5px;
+	margin-top: 10px;
+}
+.interno .panel, .interno .panel-default {
+	border-radius: 0;
+	box-shadow: none;
 }
 .interno .panel-resumen .panel-body {
 	padding: 50px;
@@ -324,6 +355,24 @@ ul.navbar-nav {
 	padding: 35px;
 }
 .interno .table .btn-info {padding: 2px 25px;}
+
+.interno .img-panel {
+	width: 100%;
+	padding: 0;
+	height: 50px;
+	background: url('../img/bgresumen.png') center no-repeat;
+}
+
+.interno .panel-default .panel-heading {
+	padding: 10px 0;
+	background: transparent;
+	border-color: transparent;
+	color: #888;
+}
+
+.interno .panel-causa .panel-body {
+	padding: 30px;
+}
 
 /***** Features *****/
 
@@ -355,6 +404,8 @@ ul.navbar-nav {
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {color: #fff; background-color: #777; border-color: #777;}
 .btn-alert { color: #fff; background-color: #02a79f; border-color: #02a79f; padding: 10px 65px; border-radius: 0px;font-weight: 500;}
 .btn-alert:hover, .btn-alert:active, .btn-alert:focus {color: #fff; background-color: #09807a; border-color: #02a79f;}
+.btn-warning { color: #000; background-color: #f3f3f3; border-color: #f3f3f3; padding: 10px 55px; border-radius: 0px;}
+.btn-warning:hover, .btn-warning:active, .btn-warning:focus {color: #000; background-color: #fff; border-color: #fff;}
 .btn-success.btn-sm{padding: 5px 10px; margin: 10px 5px;}
 
 .donar {
@@ -417,6 +468,10 @@ label {
 	margin-bottom: 5px;
 	font-weight: 500;
 	font-size: 12px;
+}
+.panel input[type=checkbox], input[type=radio] {
+	margin: -5px 0 0 -20px;
+	line-height: normal;
 }
 
 /* Chart */
@@ -533,11 +588,26 @@ footer ul.navbar-nav { margin-top:0; }
 	.navbar-inverse ul.navbar-nav li a:hover { color: #ddd; border-bottom: none; }
 	.navbar-inverse ul.navbar-nav li a.active { color: #fff; outline: 0; border-bottom: none; }
 
+	.interno .navbar { padding-top: 0; background: #fff; }
+	.interno .usuario {
+    width: 330px;
+    margin-top: -70px;
+    padding-right: 10px;
 }
 
-@media (max-width: 415px) {
+}
+
+@media (max-width: 576px) {
 	
 	h1, h2 { font-size: 36px; }
+	.interno .usuario {
+    width: 100%;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+    padding-right: 0;
+}
 
 }
 
