@@ -33,40 +33,54 @@
 
 <body class="interno">
 
+    <div id="sideNav" class="sidenav">
+        <ul class="nav ">
+            <li><a href="actividad.html" target="_self">Actividad</a></li>
+            <li class="active"><a href="eventos.html" target="_self">Eventos</a></li>
+            <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
+            <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
+            <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
+        </ul>
+    </div>
+
     <!-- Top menu -->
     <nav class="navbar navbar-light" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                    <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
+                </button>
                 <a class="navbar-brand" href="#">
                     <h1 class="text-hide">Doning</h1>
                 </a>
             </div>
         </div>
-        <div class="usuario pull-right">
-            <div class="col-sm-8">
+    </nav>
+    <div class="container pull-right usuario">
+        <div class="row">
+            <div class="col-sm-8 col-xs-9 text-right">
                 <h4>Nombre de Usuario</h4>
                 <a href="">Editar perfil</a><span> | </span><a href="">Cerrar sesión</a>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-3">
                 <img src="assets/img/user.svg" class="text-right" alt="" width="60px">
             </div>
         </div>
-    </nav>
+    </div>
 
     <div class="contenedor">
         <div class="subheader">
             <div class="container">
-                <div class="row">
+                <div class="hidden-xs">
                     <ol class="breadcrumb">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#" class="active">Nuevo evento</a></li>
+                        <li><a href="#" class="active">Eventos</a></li>
                     </ol>
                 </div>
-                <div class="row">
-                    <h2 class="titulo">Crea un nuevo evento</h2>
+                <div class="container-fluid">
+                    <h2 class="titulo">Eventos</h2>
                 </div>
-                <div class="divider-1"></div>
-                <div class="row">
+                <div class="container-fluid hidden-xs">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs">
                         <li><a href="actividad.html" target="_self">Actividad</a></li>
@@ -167,57 +181,61 @@
                                             autem quod.</p>
                                     </div>
                                     <div class="col-md-2">
-                                            <div class="single-chart">
-                                                    <svg viewBox="0 0 36 36" class="circular-chart green">
-                                                        <path class="circle-bg" d="M18 2.0845
+                                        <div class="single-chart">
+                                            <svg viewBox="0 0 36 36" class="circular-chart green">
+                                                <path class="circle-bg" d="M18 2.0845
                                                                             a 15.9155 15.9155 0 0 1 0 31.831
                                                                             a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                                        <path class="circle" stroke-dasharray="25, 100" d="M18 2.0845
+                                                <path class="circle" stroke-dasharray="25, 100" d="M18 2.0845
                                                                             a 15.9155 15.9155 0 0 1 0 31.831
                                                                             a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                                        <text x="18" y="20.35" class="percentage">24%</text>
-                                                    </svg>
-                                                </div>
+                                                <text x="18" y="20.35" class="percentage">24%</text>
+                                            </svg>
+                                        </div>
                                     </div>
                                     <div class="col-md-2">
-                                        <img src="assets/img/causa-ev2.png" alt="" width="80px" style="margin:10px auto;">
+                                        <img src="assets/img/causa-ev2.png" alt="" width="80px"
+                                            style="margin:10px auto;">
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#" class="btn btn-primary btn-block" role="button" style="    margin: 25px 0;">ELEGIR</a>
+                                        <a href="#" class="btn btn-primary btn-block" role="button"
+                                            style="    margin: 25px 0;">ELEGIR</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="panel panel-default panel-evento">
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <h4>Vestidos por la vida</h4>
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
-                                                autem quod.</p>
-                                        </div>
-                                        <div class="col-md-2">
-                                                <div class="single-chart">
-                                                        <svg viewBox="0 0 36 36" class="circular-chart green">
-                                                            <path class="circle-bg" d="M18 2.0845
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <h4>Vestidos por la vida</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
+                                            autem quod.</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="single-chart">
+                                            <svg viewBox="0 0 36 36" class="circular-chart green">
+                                                <path class="circle-bg" d="M18 2.0845
                                                                                 a 15.9155 15.9155 0 0 1 0 31.831
                                                                                 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                                            <path class="circle" stroke-dasharray="25, 100" d="M18 2.0845
+                                                <path class="circle" stroke-dasharray="25, 100" d="M18 2.0845
                                                                                 a 15.9155 15.9155 0 0 1 0 31.831
                                                                                 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                                            <text x="18" y="20.35" class="percentage">24%</text>
-                                                        </svg>
-                                                    </div>
+                                                <text x="18" y="20.35" class="percentage">24%</text>
+                                            </svg>
                                         </div>
-                                        <div class="col-md-2">
-                                            <img src="assets/img/causa-ev1.png" alt="" width="80px" style="margin:10px auto;">
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#" class="btn btn-primary btn-block" role="button" style="    margin: 25px 0;">ELEGIR</a>
-                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img src="assets/img/causa-ev1.png" alt="" width="80px"
+                                            style="margin:10px auto;">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="btn btn-primary btn-block" role="button"
+                                            style="    margin: 25px 0;">ELEGIR</a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -225,53 +243,57 @@
     </div>
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 pull-left">
-                    <img src="assets/img/logo.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-sm-8 pull-right text-right">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <a href="#" target="_blank"><img src="assets/img/fb.svg" width="25px" alt=""
-                                    style="margin:5px;"></a>
-                            <a href="#" target="_blank"><img src="assets/img/tw.svg" width="25px" alt=""
-                                    style="margin:5px;"></a>
-                        </div>
-                        <div class="col-sm-12">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Somos</a></li>
-                                <li><a href="#" class="active">Causas</a></li>
-                                <li><a href="#">Inscribe una causa</a></li>
-                                <li><a href="#">Contacto</a></li>
-                            </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 pull-left">
+                        <img src="assets/img/logo.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-8 pull-right text-right">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" target="_blank"><img src="assets/img/fb.svg" class="social" alt=""></a>
+                                <a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
+                            </div>
+                            <div class="col-sm-12 hidden-xs">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Somos</a></li>
+                                    <li><a href="#" class="active">Causas</a></li>
+                                    <li><a href="#">Inscribe una causa</a></li>
+                                    <li><a href="#">Contacto</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+    
                 </div>
-
-            </div>
-            <div class="row divider-2">
-                <div class="col-sm 12 text-center">
-                    2019 © Doning - Todos los derechos reservados
+                <div class="row divider-2">
+                    <div class="col-sm 12 text-center">
+                        2019 © Doning - Todos los derechos reservados
+                    </div>
+    
                 </div>
-
             </div>
-        </div>
-    </footer>
-
-
-    <!-- Javascript -->
-    <script src="assets/js/jquery-1.11.1.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/retina-1.1.0.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
-
-    <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
+        </footer>
+    
+    
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/retina-1.1.0.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+    
+        <!--[if lt IE 10]>
+                    <script src="assets/js/placeholder.js"></script>
+                <![endif]-->
+        <script>
+            function openNav() {
+                var element = document.getElementById("sideNav");
+                element.classList.toggle("ancho");;
+            }
+        </script>
 
 </body>
 

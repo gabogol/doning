@@ -6,6 +6,9 @@ jQuery(document).ready(function() {
 	// toggle "navbar-no-bg" class
 	$('.top-content .text').waypoint(function() {
 		$('nav').toggleClass('navbar-no-bg');
+    });
+    $('.top-content .text').waypoint(function() {
+		$('.navbar-brand').toggleClass('navbar-brand2');
 	});
 	
     /*
