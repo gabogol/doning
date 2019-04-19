@@ -644,8 +644,16 @@ footer .social {width:25px; margin:5px;}
 }
 
 @media (max-width: 767px) {
+
+	 #home { background: url('../img/backgrounds/headermobile.jpg') center bottom no-repeat; background-size: cover;}
+
 	
-	.navbar { padding-top: 0; background: #00e8c1; }
+	.navbar { padding-top: 0; }
+	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #101010;
+    background: #00e8c1eb;
+	}
+	.navbar-toggle {padding-right: 0;}
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 15px; }
 	.navbar-collapse { border: 0; }
 	.navbar-inverse .navbar-toggle { border-color: transparent; }
@@ -655,7 +663,7 @@ footer .social {width:25px; margin:5px;}
 	.section-description p { padding: 0; }
 	.section-container .col-izq {margin-top: 20px;}
 	.section-container .col-der {margin-top: 10px; padding-left: 20px;}
-	.top-content { padding: 40px 0 60px 0; }
+	/*.top-content { padding: 40px 0 60px 0; }*/
 	
 	.features-box { text-align: center; }
 	.features-box h3 { margin-top: 5px; padding-top: 10px; }
@@ -680,23 +688,5 @@ footer .social {width:25px; margin:5px;}
 	footer .social {width:40px; margin:5px;}
 	.interno .usuario {width: 100%;}
 	.interno .usuario a {font-size: 1.3rem;}
-	
-}
-
-
-/* Retina-ize images/icons */
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-	
-	/* logo */
-    .navbar-brand {
-    	background-image: url(../img/logo@2x.png) !important; background-repeat: no-repeat !important; background-size: 178px 107px !important;
-    }
 	
 }
