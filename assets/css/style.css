@@ -277,7 +277,7 @@ ul.navbar-nav {
 .registro .olvido {color:#888; text-decoration: underline;}
 .registro .olvido:hover {color: #8fffde}
 
-.interno {background: #fff; color: #888;}
+.interno {background: #f7f7f7; color: #888;}
 .interno .navbar {height: 81px;}
 .interno .contenedor {padding-bottom: 10%}
 .interno .subheader {background: #f5f5f5; border-bottom: 1px solid #dadada;}
@@ -347,6 +347,11 @@ ul.navbar-nav {
 	background-size: cover;
 	overflow: hidden;
 }
+.interno .evento-img.invita {
+	position: relative;
+	top: -26px;
+	z-index: -1;
+}
 .interno .mailing-img {
 	width: 100%;
 	height: 190px;
@@ -363,6 +368,7 @@ ul.navbar-nav {
 .interno .panel, .interno .panel-default {
 	border-radius: 0;
 	box-shadow: none;
+  border-color: #f7f7f7;
 }
 .interno .panel-resumen .panel-body {
 	padding: 50px;
@@ -398,6 +404,16 @@ ul.navbar-nav {
 
 .interno .panel-causa .panel-body {
 	padding: 30px;
+}
+
+.interno .causa-ev {
+	margin: 5px auto; 
+	display: block;
+	padding: 5px;
+}
+
+.interno .col-xs-6.col-md-3 .circular-chart {
+	max-width: 100%;
 }
 
 /**Sidenav**/
@@ -446,15 +462,13 @@ ul.navbar-nav {
 /***** Buttons *****/
 .btn-facebook { color: #fff; background-color: #395692; border-color: #395692; transition: ease-in-out .5s; border-radius: 0; }
 .btn-facebook:hover, .btn-facebook:active, .btn-facebook:focus {color: #fff; background-color: #27447f; border-color: #395692; } 
-.btn-twitter { color: #fff; background-color: #35ade4; border-color: #35ade4; transition: ease-in-out .5s; }
+.btn-twitter { color: #fff; background-color: #35ade4; border-color: #35ade4; transition: ease-in-out .5s; border-radius: 0; }
 .btn-twitter:hover, .btn-twitter:active, .btn-twitter:focus {color: #fff; background-color: #2797cb; border-color: #35ade4; }
-.btn-whatsapp { color: #fff; background-color: #25d366; border-color: #25d366; transition: ease-in-out .5s; }
+.btn-whatsapp { color: #fff; background-color: #25d366; border-color: #25d366; transition: ease-in-out .5s; border-radius: 0; }
 .btn-whatsapp:hover, .btn-whatsapp:active, .btn-whatsapp:focus {color: #fff; background-color: #1cad52; border-color: #25d366; }
 .btn-google { color: #fff; background-color: #de4b39; border-color: #de4b39; transition: ease-in-out .5s; border-radius: 0; }
 .btn-google:hover, .btn-google:active, .btn-google:focus {color: #fff; background-color: #bb3c2d; border-color: #de4b39; } 
 .fa-2x {font-size: 1.5em;}
-.btn-group-justified .btn { padding: 10px 30px; border-radius: 0px; }
-.btn-group-justified .btn-group { margin: 0 5px; }
 .link-1 { padding: 0 15px; color:#888; }
 .link-1:hover {color:#00e8c1;}
 .link-1 .fa { padding-right: 20px; color: #00e8c1; }
@@ -532,7 +546,7 @@ label {
 	font-weight: 500;
 	font-size: 12px;
 }
-.panel input[type=checkbox], input[type=radio] {
+.interno .panel input[type=checkbox], input[type=radio] {
 	margin: -5px 0 0 -20px;
 	line-height: normal;
 }
@@ -602,6 +616,7 @@ footer .social {width:25px; margin:5px;}
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 		margin-left: 45%;
 	}
+	.causa .col-izq {margin-top: -50px;}
 }
 
 @media (min-width: 768px) {
@@ -615,6 +630,7 @@ footer .social {width:25px; margin:5px;}
 	}
 	footer .navbar-right { margin-right:0; }
 	footer .nav>li>a { padding: 20px 0; }
+	.causa .col-izq {margin-top: -30px;}
 }
 
 
@@ -637,7 +653,6 @@ footer .social {width:25px; margin:5px;}
 		margin: 0 2px;
 	}
 	
-	.btn-group-justified .btn { padding: 5px; }
 	.section-description p { padding: 0; }
 	.features-box .features-box-icon { font-size: 50px; line-height: 50px; }
 	
@@ -649,6 +664,10 @@ footer .social {width:25px; margin:5px;}
 	.icon-box {width: 175px; margin-right: -20px; margin-top: -790px; padding: 10px 10px; top: 10%;}
 	#home { background: url('../img/backgrounds/5.jpg') center top no-repeat; background-size: cover;}
 	.home .categoria { width: 100%; padding: 5px; }
+	.circular-chart {
+		max-height: 200px;
+		max-width: 100%;
+		}
 }
 
 @media (max-width: 991px) {
@@ -660,11 +679,20 @@ footer .social {width:25px; margin:5px;}
     padding: 0;
 	}
 	footer .nav>li>a { padding: 20px 5px; }
+	.circular-chart {
+    max-height: 150px;
+	}
+	.causa .col-izq {margin-top: -100px;}
+	
+	.interno .col-xs-6.col-md-3 .circular-chart {
+		max-height: 180px;
+	}
 }
 
 @media (max-width: 767px) {
 
 	#home { background: url('../img/backgrounds/headermobile.jpg') center top no-repeat; background-size: cover;}
+	#causa {background-position: left top;}
 	.top-content {padding: 140px 0 270px 0;}
 	.top-content .text { padding-top: 15%;}
 	.kalam {font-size: 46px; line-height: .5;}
@@ -688,6 +716,7 @@ footer .social {width:25px; margin:5px;}
  .home .section-container .col-izq {margin-top: 20px; padding: 0 35px;}
  .home .section-container .col-der {margin-top: -150px; padding-left: 35px; padding-right: 35px;}
  .home .section-container .btn-nuevo {margin-top:-210px; margin-right: 30px}	
+ .section-container .btn-nuevo {margin-top:-30px; margin-right: 30px}	
  .features-box { text-align: center; }
  .features-box h3 { margin-top: 5px; padding-top: 10px; }
  .navbar-inverse .navbar-toggle:hover {background-color: transparent !important;}
@@ -697,7 +726,14 @@ footer .social {width:25px; margin:5px;}
  .interno .navbar { padding-top: 0; background: #fff; }
  .interno .usuario {margin-bottom: 60px; margin-top: 30px; width: 100%;}
  .interno h2.titulo { border-bottom: 3px solid #00e8c1; padding-bottom: 10px; margin-bottom: 0;}
- 
+ .circular-chart {
+	max-height: 200px;
+	}
+.interno .navbar .btn-success, .registro .navbar .btn-success {
+	margin-top: -85px;
+}
+.registro .panel {margin-top: 30px;}
+
 }
 
 @media (max-width: 576px) {
@@ -728,6 +764,8 @@ footer .social {width:25px; margin:5px;}
 	}
 	.home .categoria { width: 70%; padding: 5px; }
 	.home .tab-content { padding: 0 5px; }
-
+	.interno .panel-evento {
+    padding: 15px;
+}
 	
 }
