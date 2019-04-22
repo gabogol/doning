@@ -18,7 +18,7 @@ body {
     -webkit-overflow-scrolling: touch;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
-		color: #888;
+		color: #444;;
 		line-height: 160%;
 		background: #f7f7f7;
 		
@@ -45,6 +45,8 @@ ul {
 }
 
 img { max-width: 100%; height: auto; }
+
+hr {border-bottom-color: #888;}
 
 .medium-paragraph { font-size: 14px; line-height: 24px;}
 
@@ -113,8 +115,8 @@ ul.navbar-nav {
 
 .navbar-inverse ul.navbar-nav li a.btn-link-3 {
     display: inline-block;
-    margin: 10px 90px;
-    padding: 6px 35px;
+    margin: 10px 0px 0px 5px;
+    padding: 6px 20px;
     background: #fff;
     border: 0;
     font-size: 14px;
@@ -134,12 +136,12 @@ ul.navbar-nav {
 .navbar-brand {
 	width: 178px;
 	height: 107px;
-	background: url(../img/logo.png) left center no-repeat;
+	background: url(../img/logo.svg) left center no-repeat;
 }
 .navbar-brand2 {
 	width: 178px;
 	height: 81px;
-	background: url(../img/logo2.png) left center no-repeat;
+	background: url(../img/logo2.svg) left center no-repeat;
 }
 
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 0; }
@@ -148,7 +150,11 @@ ul.navbar-nav {
 /***** Top content *****/
 #causa { background: url('../img/backgrounds/3.jpg') center bottom no-repeat; background-size: cover;}
 #home { background: url('../img/backgrounds/4.jpg') center bottom no-repeat; background-size: cover;}
-.top-content { padding: 60px 0 150px 0;}
+#donar { background: url('../img/backgrounds/bgris.jpg') center top no-repeat; background-size: cover;}
+
+.top-content { padding: 13% 0;}
+#causa.top-content { padding: 70px 0 140px 0;}
+.top-content.top-doning {padding: 70px 0 130px 0;}
 .top-content .text { padding-top: 60px; color: #fff; }
 .top-content .text h1 { color: #fff; font-weight: 300; font-size: 42px; margin: 5px 10px;}
 .top-content .text .big {font-size: 43px; font-weight: 700; padding: 20px 29px;}
@@ -164,8 +170,20 @@ ul.navbar-nav {
 .icon-box a {text-decoration: none; color:#02a79f;}
 
 /********  Home  *********/
-.home .section-container .col-izq {margin-top: -50px;}
+.home .section-container .col-izq {margin-top: -80px;}
 .home .section-container .col-der {margin-top: -50px; padding-left: 5%;}
+.home .container.contenido {padding: 5% 5% 10%;}
+.home .subheader {background: #f5f5f5; border-bottom: 1px solid #dadada; padding: 5% 10% 0px;}
+.home h2.titulo { border-bottom: 3px solid #00e8c1; padding-bottom: 20px; margin-bottom: 0;}
+.home h2.titulo2 {font-weight: 900; }
+.home .cont2 {background: url('../img/backgrounds/bgris02.jpg') top center no-repeat; background-size: cover;}
+.home .cont2 .container {padding-top: 160px;}
+.home .panel-title {font-size: 20px;}
+.home .panel-default {border: 0 !important;}
+.home .panel-default > .panel-heading + .panel-collapse > .panel-body {border-top: 0; background:#f7f7f7; padding: 40px;}
+.home .panel-default > .panel-heading {padding: 30px;}
+.home .navbar .btn-success {margin-top:15px;}
+.home .lead {font-size: 18px;}
 .home .hricon {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -177,6 +195,7 @@ ul.navbar-nav {
 	text-align: left;
 	float: left;
 }
+.home .fa-3x.don-ico{margin: 0 15px 45px 0;}
 .home .nav-tabs {
 	display: flex;
 	justify-content: center;
@@ -245,6 +264,9 @@ ul.navbar-nav {
 }
 .home .btn-lg {
 	padding: 20px 15px;
+}
+.home .img-globo {
+	padding: 20px;
 }
 .home .mascara {
 	background: rgba(247,247,247,0);
@@ -594,7 +616,7 @@ label {
 
 /***** Footer *****/
 
-footer { padding: 40px 0 45px 0; background: #00e8c1; color:#fff;}
+footer { padding: 40px 0 45px 0; background-color: #00e8c1; color:#fff;}
 footer ul li a { color: #fff; } 
 footer ul.navbar-nav { margin-top:0; }
 footer .social {width:25px; margin:5px;}
@@ -624,37 +646,32 @@ footer .social {width:25px; margin:5px;}
 		padding-right: 0px;
 		padding-left: 0px;
 	}
+	.home .subheader .container-fluid {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.causa .col-der {margin-top: -20px;}
 	.navbar-right {
     float: right!important;
     margin-right: 15px;
 	}
 	footer .navbar-right { margin-right:0; }
 	footer .nav>li>a { padding: 20px 0; }
-	.causa .col-izq {margin-top: -30px;}
-}
-
-
-@media (min-width: 992px) and (max-width: 1199px) {
-	.navbar-inverse ul.navbar-nav li a.btn-link-3 {
-		margin: 10px 50px;
-	}
+	.causa .col-izq {margin-top: -70px;}
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-	.navbar-inverse ul.navbar-nav li a.btn-link-3 {
-		margin: 10px 5px;
-		padding: 6px 20px;
-	}
 	
 	.nav>li {
 		position: relative;
 		display: block;
 		margin: 0 2px;
 	}
-	
 	.section-description p { padding: 0; }
 	.features-box .features-box-icon { font-size: 50px; line-height: 50px; }
+
+	ul.navbar-nav {font-size: 12px;}
 	
 }
 
@@ -662,12 +679,14 @@ footer .social {width:25px; margin:5px;}
 
 @media (max-width: 1200px) {
 	.icon-box {width: 175px; margin-right: -20px; margin-top: -790px; padding: 10px 10px; top: 10%;}
-	#home { background: url('../img/backgrounds/5.jpg') center top no-repeat; background-size: cover;}
 	.home .categoria { width: 100%; padding: 5px; }
 	.circular-chart {
 		max-height: 200px;
 		max-width: 100%;
 		}
+		.home .fa-3x.don-ico {
+			margin: 0 15px 95px 0;
+	}
 }
 
 @media (max-width: 991px) {
@@ -687,12 +706,24 @@ footer .social {width:25px; margin:5px;}
 	.interno .col-xs-6.col-md-3 .circular-chart {
 		max-height: 180px;
 	}
+	.home .fa-3x.don-ico {
+    margin: 0 15px 135px 0;
+	}
+	.home .navbar-right {
+		margin-right: 0px;	
+	}
+	.navbar-inverse ul.navbar-nav li a.btn-link-3 {padding: 5px 10px; margin: 10px 0px 0px 0px;}
+	.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 10px;}
 }
 
 @media (max-width: 767px) {
 
 	#home { background: url('../img/backgrounds/headermobile.jpg') center top no-repeat; background-size: cover;}
 	#causa {background-position: left top;}
+	.landing .row {padding: 0 5%;}
 	.top-content {padding: 140px 0 270px 0;}
 	.top-content .text { padding-top: 15%;}
 	.kalam {font-size: 46px; line-height: .5;}
@@ -704,7 +735,7 @@ footer .social {width:25px; margin:5px;}
 	}
  .home .tab-content {padding: 0 30px;}
  .home .row.row-botones .col-sm-4 {margin:25px 0;}
- .navbar { padding-top: 0; }
+ .navbar { padding-top: 0; z-index: 1090;}
  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {border-color: #101010; background: #00e8c1eb;}
  .navbar-toggle {padding-right: 0;}
  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 15px; }
@@ -716,6 +747,9 @@ footer .social {width:25px; margin:5px;}
  .home .section-container .col-izq {margin-top: 20px; padding: 0 35px;}
  .home .section-container .col-der {margin-top: -150px; padding-left: 35px; padding-right: 35px;}
  .home .section-container .btn-nuevo {margin-top:-210px; margin-right: 30px}	
+ .home .subheader {padding: 10% 10% 0px;}
+ .home .fa-3x.don-ico {margin: 0 15px 55px 0;}
+ .home .img-globo {padding: 30px; width: 280px; margin:0 auto;}
  .section-container .btn-nuevo {margin-top:-30px; margin-right: 30px}	
  .features-box { text-align: center; }
  .features-box h3 { margin-top: 5px; padding-top: 10px; }
@@ -729,7 +763,7 @@ footer .social {width:25px; margin:5px;}
  .circular-chart {
 	max-height: 200px;
 	}
-.interno .navbar .btn-success, .registro .navbar .btn-success {
+.interno .navbar .btn-success, .registro .navbar .btn-success, .home .navbar .btn-success {
 	margin-top: -85px;
 }
 .registro .panel {margin-top: 30px;}
@@ -737,7 +771,8 @@ footer .social {width:25px; margin:5px;}
 }
 
 @media (max-width: 576px) {
-	h1, h2 { font-size: 36px; }
+	h1 { font-size: 36px; }
+	h2 {font-size: 30px;}
 	h4 {font-size: 16px;}
 	.kalam {font-size: 35px; line-height: .5;}
 	.top-content .text { padding-top: 15%;}
