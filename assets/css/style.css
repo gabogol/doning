@@ -620,6 +620,7 @@ footer { padding: 40px 0 45px 0; background-color: #00e8c1; color:#fff;}
 footer ul li a { color: #fff; } 
 footer ul.navbar-nav { margin-top:0; }
 footer .social {width:25px; margin:5px;}
+footer .row-footer .col-xs-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #fff;}
 
 
 
@@ -658,6 +659,7 @@ footer .social {width:25px; margin:5px;}
 	footer .navbar-right { margin-right:0; }
 	footer .nav>li>a { padding: 20px 0; }
 	.causa .col-izq {margin-top: -70px;}
+	footer .row-footer .col-xs-12.col-sm-6.col-md-9.col-lg-9 {text-align: right;}
 }
 
 
@@ -698,6 +700,7 @@ footer .social {width:25px; margin:5px;}
     padding: 0;
 	}
 	footer .nav>li>a { padding: 20px 5px; }
+	footer .social {width:35px; margin:3px;}
 	.circular-chart {
     max-height: 150px;
 	}
@@ -742,7 +745,8 @@ footer .social {width:25px; margin:5px;}
  .navbar-collapse { border: 0; }
  .navbar-inverse .navbar-toggle { border-color: transparent; }
  .navbar-inverse ul.navbar-nav li a.btn-link-3 { margin: 10px; }
- footer .social {width:60px; margin:5px;}
+ footer .social {width:40px; margin:5px;}
+ footer .row-footer .col-xs-12.col-sm-6.col-md-9.col-lg-9 {text-align: center; padding-top:20px;}
  .home .section-description p { padding: 0; }
  .home .section-container .col-izq {margin-top: 20px; padding: 0 35px;}
  .home .section-container .col-der {margin-top: -150px; padding-left: 35px; padding-right: 35px;}
@@ -778,6 +782,7 @@ footer .social {width:25px; margin:5px;}
 	.top-content .text { padding-top: 15%;}
 	.top-content .text .big {font-size:35px; padding: 20px 10px;}
 	footer .social {width:40px; margin:5px;}
+	footer .row-footer {margin:0 auto;}
 	.interno .usuario {width: 100%;}
 	.interno .usuario a {font-size: 1.3rem;}
 	.home .nav-tabs {
