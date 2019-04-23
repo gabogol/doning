@@ -120,10 +120,25 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group input-group">
-                                <span class="input-group-addon"><i class="fa fa-credit-card fa-fw"></i></span>
-                                <input type="text" class="form-control" id="Tarjeta" placeholder="Numero de tarjeta">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                        <input type="text" class="form-control" id="Rut" placeholder="Rut titular">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="fa fa-money fa-fw"></i></span>
+                                        <input type="text" class="form-control" id="Donacion"
+                                            placeholder="$5.000 Mensual">
+                                    </div>
+                                </div>
                             </div>
+                            <div class="form-group input-group">
+                                    <span class="input-group-addon"><i class="fa fa-credit-card fa-fw"></i></span>
+                                    <input type="text" class="form-control" id="Tarjeta" placeholder="Numero de tarjeta">
+                                </div>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group input-group">
@@ -132,22 +147,12 @@
                                             placeholder="Vencimiento MM/YY">
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                                        <input type="text" class="form-control" id="Rut" placeholder="Rut titular">
-                                    </div>
+                                <div class="col-sm-6" id="fechaVenc">
+                                        <a data-toggle="tooltip" class="btn"
+                                        title="<img src='assets/img/fechavencimiento.png'/>">
+                                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group input-group">
-                                        <span class="input-group-addon"><i class="fa fa-money fa-fw"></i></span>
-                                        <input type="text" class="form-control" id="Donacion"
-                                            placeholder="$5.000 Mensual">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6"></div>
                             </div>
                             <div class="form-group">
                                 <div class="checkbox">
@@ -183,34 +188,34 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4 pull-left">
-                    <img src="assets/img/logo.png" class="img-fluid" alt="">
+            <div class="row row-footer">
+                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+                    <img src="assets/img/logofooter.svg" class="img-fluid" alt="">
                 </div>
-                <div class="col-sm-8 pull-right text-right">
+                <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
                     <div class="row">
                         <div class="col-sm-12">
                             <a href="#" target="_blank"><img src="assets/img/fb.svg" class="social" alt=""></a>
                             <a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
+                            <a href="#" target="_blank"><img src="assets/img/ig.svg" class="social" alt=""></a>
                         </div>
-                        <div class="col-sm-12 hidden-xs">
+                        <div class="col-sm-12 hidden-xs hidden-sm pull-right">
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Somos</a></li>
                                 <li><a href="#" class="active">Causas</a></li>
                                 <li><a href="#">Inscribe una causa</a></li>
+                                <li><a href="#">Términos y condiciones</a></li>
                                 <li><a href="#">Contacto</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="row divider-2">
-                <div class="col-sm 12 text-center">
+                <div class="col-sm-12 text-center">
                     2019 © Doning - Todos los derechos reservados
                 </div>
-
             </div>
         </div>
     </footer>
@@ -231,6 +236,14 @@
             var element = document.getElementById("sideNav");
             element.classList.toggle("ancho");;
         }
+    </script>
+    <script>
+
+        $('#fechaVenc [data-toggle="tooltip"]').tooltip({
+            animated: 'fade',
+            placement: 'right',
+            html: true
+        });
     </script>
 
 </body>
