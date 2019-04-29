@@ -40,6 +40,7 @@
             <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
             <li class="active"><a href="subscripciones.html" target="_self">Subscripciones</a></li>
             <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
+            <li><a href="#">Cerrar sesión</a></li>
         </ul>
     </div>
 
@@ -136,22 +137,22 @@
                                 </div>
                             </div>
                             <div class="form-group input-group">
-                                    <span class="input-group-addon"><i class="fa fa-credit-card fa-fw"></i></span>
-                                    <input type="text" class="form-control" id="Tarjeta" placeholder="Numero de tarjeta">
-                                </div>
+                                <span class="input-group-addon"><i class="fa fa-credit-card fa-fw"></i></span>
+                                <input type="text" class="form-control" id="Tarjeta" placeholder="Numero de tarjeta">
+                            </div>
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 col-sm-push-6" id="fechaVenc">
+                                    <a data-toggle="tooltip" class="btn"
+                                        title="<img src='assets/img/fechavencimiento.png'/>">
+                                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-sm-pull-6">
                                     <div class="form-group input-group">
                                         <span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
                                         <input type="text" class="form-control" id="Vencimiento"
                                             placeholder="Vencimiento MM/YY">
                                     </div>
-                                </div>
-                                <div class="col-sm-6" id="fechaVenc">
-                                        <a data-toggle="tooltip" class="btn"
-                                        title="<img src='assets/img/fechavencimiento.png'/>">
-                                        <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                    </a>
                                 </div>
                             </div>
                             <div class="form-group">
