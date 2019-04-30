@@ -620,7 +620,14 @@ footer ul.navbar-nav { margin-top:0; }
 footer .social {width:25px; margin:5px;}
 footer .row-footer .col-xs-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #fff;}
 
-
+.tooltip-inner {
+  max-width: 600px;
+  padding: 3px 2px;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 4px;
+}
 
 /***** MEDIA QUERIES *****/
 

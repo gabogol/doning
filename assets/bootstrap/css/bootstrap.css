@@ -6031,8 +6031,8 @@ button.close {
   margin-left: -3px;
 }
 .tooltip-inner {
-  max-width: 200px;
-  padding: 3px 8px;
+  max-width: 600px;
+  padding: 3px 2px;
   color: #fff;
   text-align: center;
   background-color: #000;
