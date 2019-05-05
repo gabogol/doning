@@ -405,7 +405,7 @@ ul.navbar-nav {
 .interno .panel-evento {
 	padding: 35px;
 }
-.interno .table .btn-info {padding: 2px 25px;}
+.interno .table .btn-info {padding: 2px 15px;}
 
 .interno .img-panel {
 	width: 100%;
@@ -439,7 +439,8 @@ ul.navbar-nav {
 
 .sidenav {
 	height: 100%; 
-	width: 0;
+	width: 100%;
+	margin-left: -100%;
   position: fixed; /* Stay in place */
   z-index: 99; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -450,7 +451,7 @@ ul.navbar-nav {
   transition: 0.5s ease-in-out; 
 }
 .sidenav.ancho {
-	width: 250px;
+	margin-left: 0;
 }
 .sidenav a {
   text-decoration: none;
@@ -462,13 +463,12 @@ ul.navbar-nav {
 }
 .sidenav a:hover {
 	color: #3de8c1;
-	border-bottom: 1px solid #fff;
 }
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
+  top: 95px;
   right: 25px;
-  font-size: 36px;
+  font-size: 40px;
   margin-left: 50px;
 }
 
@@ -610,7 +610,9 @@ label {
 	fill: #666;
 	font-size: .5em;
 	text-anchor: middle;
-  }
+	}
+	
+	.progress-bar {background-color: #00e7c1;}
 
 /***** Footer *****/
 
@@ -747,7 +749,7 @@ footer .row-footer .col-xs-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid 
  .navbar { padding-top: 0; z-index: 1090;}
  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {border-color: #101010; background: #00e8c1eb;}
  .navbar-toggle {padding-right: 0;}
- .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 15px; }
+ .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 0px; }
  .navbar-collapse { border: 0; }
  .navbar-inverse .navbar-toggle { border-color: transparent; }
  .navbar-inverse ul.navbar-nav li a.btn-link-3 { margin: 10px; }
@@ -768,7 +770,8 @@ footer .row-footer .col-xs-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid 
  .navbar-inverse ul.navbar-nav li a:hover { color: #ddd; border-bottom: none; }
  .navbar-inverse ul.navbar-nav li a.active { color: #fff; outline: 0; border-bottom: none; }
  .interno .navbar { padding-top: 0; background: #fff; }
- .interno .usuario {margin-bottom: 60px; margin-top: 30px; width: 100%;}
+ .interno .usuario {margin-top: -65px; width: 100%; z-index: 9999; position: relative; z-index: 1100;}
+ .interno .usuario h4 {margin: 3px 0;}
  .interno h2.titulo { border-bottom: 3px solid #00e8c1; padding-bottom: 10px; margin-bottom: 0;}
  .interno .btn.btn-twitter.btn-block, .interno .btn.btn-facebook.btn-block, .interno .btn.btn-whatsapp.btn-block, .interno .btn.btn-primary.btn-block {
 	margin-top: 5px;
@@ -778,6 +781,9 @@ footer .row-footer .col-xs-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid 
 	}
 .interno .navbar .btn-success, .registro .navbar .btn-success, .home .navbar .btn-success {
 	margin-top: -85px;
+}
+.interno .subheader .container, .interno .contenido .container {
+	padding: 30px 5% 0 5%;
 }
 .registro .panel {margin-top: 30px;}
 
