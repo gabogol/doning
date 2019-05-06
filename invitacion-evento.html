@@ -33,14 +33,19 @@
 
 <body class="interno">
 
+    <!--Desde aqui-->
     <div id="sideNav" class="sidenav">
-        <ul class="nav ">
-            <li><a href="actividad.html" target="_self">Actividad</a></li>
-            <li class="active"><a href="eventos.html" target="_self">Eventos</a></li>
+        <ul class="nav">
+            <li><a href="">Volver al home</a></li>
+            <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
+            <li><a href="eventos.html" target="_self">Eventos</a></li>
             <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
             <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
             <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
             <li><a href="#">Cerrar sesión</a></li>
+            <a class="closebtn">
+                <i class="fa fa-times colored" aria-hidden="true"></i>
+            </a>
         </ul>
     </div>
 
@@ -48,9 +53,6 @@
     <nav class="navbar navbar-light" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
-                    <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
-                </button>
                 <a class="navbar-brand" href="#">
                     <h1 class="text-hide">Doning</h1>
                 </a>
@@ -59,11 +61,11 @@
     </nav>
     <div class="container pull-right usuario">
         <div class="row">
-            <div class="col-sm-8 col-xs-9 text-right">
+            <div class="col-sm-8 col-xs-12 text-right">
                 <h4>Nombre de Usuario</h4>
                 <a href="">Editar perfil</a><span> | </span><a href="">Cerrar sesión</a>
             </div>
-            <div class="col-sm-4 col-xs-3">
+            <div class="col-sm-4 col-xs-3 hidden-xs">
                 <img src="assets/img/user.svg" class="text-right" alt="" width="60px">
             </div>
         </div>
@@ -71,21 +73,26 @@
 
     <div class="contenedor">
         <div class="subheader">
+            <div class="visible-xs">
+                <button type="button" class="navbar-toggle collapsed" id="openNav">
+                    <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
+                </button>
+            </div>
             <div class="container">
                 <div class="hidden-xs">
                     <ol class="breadcrumb">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#" class="active">Eventos</a></li>
+                        <li><a href="#" class="active">Actividad</a></li>
                     </ol>
                 </div>
                 <div class="container-fluid">
-                    <h2 class="titulo">Eventos</h2>
+                    <h2 class="titulo">Actividad</h2>
                 </div>
                 <div class="container-fluid hidden-xs">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs">
-                        <li><a href="actividad.html" target="_self">Actividad</a></li>
-                        <li class="active"><a href="eventos.html" target="_self">Eventos</a></li>
+                        <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
+                        <li><a href="eventos.html" target="_self">Eventos</a></li>
                         <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
                         <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
                         <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
@@ -93,198 +100,229 @@
                 </div>
             </div>
         </div>
-        <div class="evento-img"></div>
-        <div class="contenido">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-offset-2 col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-4 text-center">
-                                <img src="assets/img/imgevento.png" class="img-fluid" alt="" style="margin-top:20px;">
-                            </div>
-                            <div class="col-sm-8">
-                                <h3>¡Te invito a mi evento!</h3>
-                                <p>Hola, soy Ignacia, el día 25-04-2019 es mi CUMPLEAÑOS, y he querido celebrar de una
-                                    manera diferente, te invito a donar a una causa, haciendo un aporte monetario a
-                                    proyectos reales que lo necesitan. Celebremos con sentido. Donar no cuesta nada.</p>
-                            </div>
-                        </div>
+        <div class="divider-1 hidden-xs"></div>
+        <!--Hasta aqui-->
+
+        <div class="contenedor">
+            <div class="subheader">
+                <div class="container">
+                    <div class="hidden-xs">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#" class="active">Eventos</a></li>
+                        </ol>
                     </div>
-                </div>
-                <div class="divider-1"></div>
-                <div class="row">
-                    <div class="col-md-offset-1 col-md-10">
-                        <div class="panel panel-default panel-evento">
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="row">
-                                            <div class="col-sm-9">
-                                                <h4>Un lugar en la ciudad</h4>
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
-                                                    autem quod.</p>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <img src="assets/img/causa-ev1.png" class="causa-ev" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="divider-0"></div>
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item"
-                                                src="https://www.youtube.com/embed/h738LfF43w4"></iframe>
-                                        </div>
-                                        <div class="divider-0"></div>
-                                        <a href="#" class="btn btn-info btn-block" role="button">DONAR</a>
-                                    </div>
-                                    <div class="divider-1 visible-xs visible-sm"></div>
-                                    <div class="col-md-6">
-                                        <form>
-                                            <div class="form-group input-group form-group-lg">
-                                                <span class="input-group-addon"><i
-                                                        class="fa fa-user-o fa-fw"></i></span>
-                                                <input type="text" class="form-control" id="Nombre"
-                                                    placeholder="Nombre">
-                                            </div>
-                                            <div class="form-group input-group form-group-lg">
-                                                <span class="input-group-addon"><i
-                                                        class="fa fa-envelope-o fa-fw"></i></span>
-                                                <input type="mail" class="form-control" id="Mail"
-                                                    placeholder="Correo Elctrónico">
-                                            </div>
-
-                                            <div class="form-group input-group form-group-lg">
-                                                <span class="input-group-addon"><i
-                                                        class="fa fa-comment-o fa-fw"></i></span>
-                                                <textarea class="form-control" rows="7"
-                                                    placeholder="Mensaje para el festejado"></textarea>
-                                            </div>
-                                            <div class="form-group input-group form-group-lg select">
-                                                <select name="" id="" class="form-control ">
-                                                    <option value="">$5.000</option>
-                                                    <option value="">$15.000</option>
-                                                    <option value="">$25.000</option>
-                                                    <option value="">$35.000</option>
-                                                    <option value="">$45.000</option>
-                                                </select>
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default panel-evento">
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-sm-5">
-                                        <h4>Un lugar en la ciudad</h4>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
-                                            autem quod.</p>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-2">
-                                        <div class="single-chart">
-                                            <svg viewBox="0 0 36 36" class="circular-chart green">
-                                                <path class="circle-bg" d="M18 2.0845
-                                                                                a 15.9155 15.9155 0 0 1 0 31.831
-                                                                                a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                                <path class="circle" stroke-dasharray="25, 100" d="M18 2.0845
-                                                                                a 15.9155 15.9155 0 0 1 0 31.831
-                                                                                a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                                <text x="18" y="20.35" class="percentage">24%</text>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-2">
-                                        <img src="assets/img/causa-ev2.png" alt="" class="causa-ev">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-3">
-                                        <a href="#" class="btn btn-primary btn-block" role="button"
-                                            style="    margin: 25px 0;">ELEGIR</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default panel-evento">
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-sm-5">
-                                        <h4>Un lugar en la ciudad</h4>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
-                                            autem quod.</p>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-2">
-                                        <div class="single-chart">
-                                            <svg viewBox="0 0 36 36" class="circular-chart green">
-                                                <path class="circle-bg"
-                                                    d="M18 2.0845
-                                                                                        a 15.9155 15.9155 0 0 1 0 31.831
-                                                                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                                <path class="circle" stroke-dasharray="25, 100"
-                                                    d="M18 2.0845
-                                                                                        a 15.9155 15.9155 0 0 1 0 31.831
-                                                                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
-                                                <text x="18" y="20.35" class="percentage">24%</text>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-2">
-                                        <img src="assets/img/causa-ev2.png" alt="" class="causa-ev">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-3">
-                                        <a href="#" class="btn btn-primary btn-block" role="button"
-                                            style="margin: 25px 0;">ELEGIR</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="container-fluid">
+                        <h2 class="titulo">Eventos</h2>
+                    </div>
+                    <div class="container-fluid hidden-xs">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li><a href="actividad.html" target="_self">Actividad</a></li>
+                            <li class="active"><a href="eventos.html" target="_self">Eventos</a></li>
+                            <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
+                            <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
+                            <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--fin-contenido-->
-    </div>
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row row-footer">
-                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/img/logofooter.svg" class="img-fluid" alt="">
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
+            <div class="evento-img"></div>
+            <div class="contenido" id="sin-top">
+                <div class="container">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <a href="#" target="_blank"><img src="assets/img/fb.svg" class="social" alt=""></a>
-                            <a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
-                            <a href="#" target="_blank"><img src="assets/img/ig.svg" class="social" alt=""></a>
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <div class="row">
+                                <div class="col-sm-4 text-center">
+                                    <img src="assets/img/imgevento.png" class="img-fluid" alt=""
+                                        style="margin-top:20px;">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3>¡Te invito a mi evento!</h3>
+                                    <p>Hola, soy Ignacia, el día 25-04-2019 es mi CUMPLEAÑOS, y he querido celebrar de
+                                        una
+                                        manera diferente, te invito a donar a una causa, haciendo un aporte monetario a
+                                        proyectos reales que lo necesitan. Celebremos con sentido. Donar no cuesta nada.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-12 hidden-xs hidden-sm pull-right">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Somos</a></li>
-                                <li><a href="#" class="active">Causas</a></li>
-                                <li><a href="#">Inscribe una causa</a></li>
-                                <li><a href="#">Términos y condiciones</a></li>
-                                <li><a href="#">Contacto</a></li>
-                            </ul>
+                    </div>
+                    <div class="divider-1"></div>
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-10">
+                            <div class="panel panel-default panel-evento">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-sm-9">
+                                                    <h4>Un lugar en la ciudad</h4>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        Nostrum,
+                                                        autem quod.</p>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <img src="assets/img/causa-ev1.png" class="causa-ev" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="divider-0"></div>
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item"
+                                                    src="https://www.youtube.com/embed/h738LfF43w4"></iframe>
+                                            </div>
+                                            <div class="divider-0"></div>
+                                            <a href="#" class="btn btn-info btn-block" role="button">DONAR</a>
+                                        </div>
+                                        <div class="divider-1 visible-xs visible-sm"></div>
+                                        <div class="col-md-6">
+                                            <form>
+                                                <div class="form-group input-group form-group-lg">
+                                                    <span class="input-group-addon"><i
+                                                            class="fa fa-user-o fa-fw"></i></span>
+                                                    <input type="text" class="form-control" id="Nombre"
+                                                        placeholder="Nombre">
+                                                </div>
+                                                <div class="form-group input-group form-group-lg">
+                                                    <span class="input-group-addon"><i
+                                                            class="fa fa-envelope-o fa-fw"></i></span>
+                                                    <input type="mail" class="form-control" id="Mail"
+                                                        placeholder="Correo Elctrónico">
+                                                </div>
+
+                                                <div class="form-group input-group form-group-lg">
+                                                    <span class="input-group-addon"><i
+                                                            class="fa fa-comment-o fa-fw"></i></span>
+                                                    <textarea class="form-control" rows="7"
+                                                        placeholder="Mensaje para el festejado"></textarea>
+                                                </div>
+                                                <div class="form-group input-group form-group-lg select">
+                                                    <select name="" id="" class="form-control ">
+                                                        <option value="">$5.000</option>
+                                                        <option value="">$15.000</option>
+                                                        <option value="">$25.000</option>
+                                                        <option value="">$35.000</option>
+                                                        <option value="">$45.000</option>
+                                                    </select>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-evento">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <h4>Un lugar en la ciudad</h4>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
+                                                autem quod.</p>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <div class="single-chart">
+                                                <svg viewBox="0 0 36 36" class="circular-chart green">
+                                                    <path class="circle-bg" d="M18 2.0845
+                                                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                    <path class="circle" stroke-dasharray="25, 100" d="M18 2.0845
+                                                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                    <text x="18" y="20.35" class="percentage">24%</text>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <img src="assets/img/causa-ev2.png" alt="" class="causa-ev">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <a href="#" class="btn btn-primary btn-block" role="button"
+                                                style="    margin: 25px 0;">ELEGIR</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-evento">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <h4>Un lugar en la ciudad</h4>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
+                                                autem quod.</p>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <div class="single-chart">
+                                                <svg viewBox="0 0 36 36" class="circular-chart green">
+                                                    <path class="circle-bg"
+                                                        d="M18 2.0845
+                                                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                    <path class="circle" stroke-dasharray="25, 100"
+                                                        d="M18 2.0845
+                                                                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                    <text x="18" y="20.35" class="percentage">24%</text>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-2">
+                                            <img src="assets/img/causa-ev2.png" alt="" class="causa-ev">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <a href="#" class="btn btn-primary btn-block" role="button"
+                                                style="margin: 25px 0;">ELEGIR</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row divider-2">
-                <div class="col-sm-12 text-center">
-                    2019 © Doning - Todos los derechos reservados
+            <!--fin-contenido-->
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row row-footer">
+                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+                        <img src="assets/img/logofooter.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" target="_blank"><img src="assets/img/fb.svg" class="social" alt=""></a>
+                                <a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
+                                <a href="#" target="_blank"><img src="assets/img/ig.svg" class="social" alt=""></a>
+                            </div>
+                            <div class="col-sm-12 hidden-xs hidden-sm pull-right">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Somos</a></li>
+                                    <li><a href="#" class="active">Causas</a></li>
+                                    <li><a href="#">Inscribe una causa</a></li>
+                                    <li><a href="#">Términos y condiciones</a></li>
+                                    <li><a href="#">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row divider-2">
+                    <div class="col-sm-12 text-center">
+                        2019 © Doning - Todos los derechos reservados
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <!--[if lt IE 10]>
+        <!-- Javascript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <!--[if lt IE 10]>
          <script src="assets/js/placeholder.js"></script>
      <![endif]-->
 

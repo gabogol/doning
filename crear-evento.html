@@ -32,14 +32,19 @@
 </head>
 
 <body class="interno">
+    <!--Desde aqui-->
     <div id="sideNav" class="sidenav">
-        <ul class="nav ">
-            <li><a href="actividad.html" target="_self">Actividad</a></li>
-            <li class="active"><a href="eventos.html" target="_self">Eventos</a></li>
+        <ul class="nav">
+            <li><a href="">Volver al home</a></li>
+            <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
+            <li><a href="eventos.html" target="_self">Eventos</a></li>
             <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
             <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
             <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
             <li><a href="#">Cerrar sesión</a></li>
+            <a class="closebtn">
+                <i class="fa fa-times colored" aria-hidden="true"></i>
+            </a>
         </ul>
     </div>
 
@@ -47,9 +52,6 @@
     <nav class="navbar navbar-light" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
-                    <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
-                </button>
                 <a class="navbar-brand" href="#">
                     <h1 class="text-hide">Doning</h1>
                 </a>
@@ -58,11 +60,11 @@
     </nav>
     <div class="container pull-right usuario">
         <div class="row">
-            <div class="col-sm-8 col-xs-9 text-right">
+            <div class="col-sm-8 col-xs-12 text-right">
                 <h4>Nombre de Usuario</h4>
                 <a href="">Editar perfil</a><span> | </span><a href="">Cerrar sesión</a>
             </div>
-            <div class="col-sm-4 col-xs-3">
+            <div class="col-sm-4 col-xs-3 hidden-xs">
                 <img src="assets/img/user.svg" class="text-right" alt="" width="60px">
             </div>
         </div>
@@ -70,21 +72,26 @@
 
     <div class="contenedor">
         <div class="subheader">
+            <div class="visible-xs">
+                <button type="button" class="navbar-toggle collapsed" id="openNav">
+                    <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
+                </button>
+            </div>
             <div class="container">
                 <div class="hidden-xs">
                     <ol class="breadcrumb">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#" class="active">Eventos</a></li>
+                        <li><a href="#" class="active">Actividad</a></li>
                     </ol>
                 </div>
                 <div class="container-fluid">
-                    <h2 class="titulo">Eventos</h2>
+                    <h2 class="titulo">Actividad</h2>
                 </div>
                 <div class="container-fluid hidden-xs">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs">
-                        <li><a href="actividad.html" target="_self">Actividad</a></li>
-                        <li class="active"><a href="eventos.html" target="_self">Eventos</a></li>
+                        <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
+                        <li><a href="eventos.html" target="_self">Eventos</a></li>
                         <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
                         <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
                         <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
@@ -92,8 +99,9 @@
                 </div>
             </div>
         </div>
-        <div class="divider-1"></div>
-        <div class="contenido">
+        <div class="divider-1 hidden-xs"></div>
+        <!--Hasta aqui-->
+        <div class="contenido" id="sin-top">
             <div class="container">
                 <div class="row">
                     <!--col izq-->
@@ -284,13 +292,13 @@
                         <div class="visible-xs visible-sm">
                             <div class="media">
                                 <div class="media-left">
-                                    <div class="numero">3</div>
                                 </div>
                                 <div class="media-body">
                                     <div class="panel panel-default panel-causa">
                                         <div class="panel-body">
                                             <div class="row">
                                                 <div class="col-xs-12">
+                                                    <div class="numero">3</div>
                                                 </div>
                                                 <div class="divider-1"></div>
                                                 <div class="col-md-6">
@@ -381,7 +389,7 @@
                                 <div class="text-center">
                                     <span>o</span>
                                     <div class="divider-0"></div>
-                                    <div class="row">
+                                    <div class="row hidden-xs">
                                         <div class="col-sm-4">
                                             <button type="button" class="btn btn-block btn-facebook"><i
                                                     class="fa fa-facebook fa-2x pull-left"
@@ -398,9 +406,28 @@
                                                     aria-hidden="true"></i>Compartir</button>
                                         </div>
                                     </div>
+                                    <div class="btn-evento row visible-xs">
+                                        <div class="col-xs-2">
+                                            <button type="button" class="btn btn-facebook"><i
+                                                    class="fa fa-facebook fa-2x" aria-hidden="true"></i></button>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button type="button" class="btn btn-twitter"><i class="fa fa-twitter fa-2x"
+                                                    aria-hidden="true"></i></button>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button type="button" class="btn btn-whatsapp"><i
+                                                    class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></button>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <a class="btn btn-sm" href="#">Copiar enlace
+                                                <i class="fa fa-link"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                     <div class="divider-0 hidden-xs"></div>
-                                    <a href="" class="btn btn-primary btn-block"><i class="fa fa-link fa-2x pull-left"
-                                            aria-hidden="true"></i>Copiar
+                                    <a href="" class="btn btn-primary btn-block hidden-xs"><i
+                                            class="fa fa-link fa-2x pull-left" aria-hidden="true"></i>Copiar
                                         enlace</a>
                                 </div>
                             </div>

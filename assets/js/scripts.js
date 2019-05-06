@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
     
-        if (scroll >= 400) {
+        if (scroll >= 50) {
             $(".navbar").removeClass("navbar-no-bg");
         } else {
             $(".navbar").addClass("navbar-no-bg");

@@ -33,59 +33,76 @@
 
 <body class="interno">
 
+<!--Desde aqui-->
+<div id="sideNav" class="sidenav">
+    <ul class="nav">
+        <li><a href="">Volver al home</a></li>
+        <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
+        <li><a href="eventos.html" target="_self">Eventos</a></li>
+        <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
+        <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
+        <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
+        <li><a href="#">Cerrar sesión</a></li>
+        <a class="closebtn">
+            <i class="fa fa-times colored" aria-hidden="true"></i>
+        </a>
+    </ul>
+</div>
 
-    <div id="sideNav" class="sidenav">
-        <ul class="nav ">
-            <li><a href="actividad.html" target="_self">Actividad</a></li>
-            <li><a href="eventos.html" target="_self">Eventos</a></li>
-            <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
-            <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
-            <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
-            <li><a href="#">Cerrar sesión</a></li>
-        </ul>
+<!-- Top menu -->
+<nav class="navbar navbar-light" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <h1 class="text-hide">Doning</h1>
+            </a>
+        </div>
     </div>
+</nav>
+<div class="container pull-right usuario">
+    <div class="row">
+        <div class="col-sm-8 col-xs-12 text-right">
+            <h4>Nombre de Usuario</h4>
+            <a href="">Editar perfil</a><span> | </span><a href="">Cerrar sesión</a>
+        </div>
+        <div class="col-sm-4 col-xs-3 hidden-xs">
+            <img src="assets/img/user.svg" class="text-right" alt="" width="60px">
+        </div>
+    </div>
+</div>
 
-    <!-- Top menu -->
-    <nav class="navbar navbar-light" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
-                    <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <h1 class="text-hide">Doning</h1>
-                </a>
+<div class="contenedor">
+    <div class="subheader">
+        <div class="visible-xs">
+            <button type="button" class="navbar-toggle collapsed" id="openNav">
+                <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="container">
+            <div class="hidden-xs">
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">Actividad</a></li>
+                </ol>
+            </div>
+            <div class="container-fluid">
+                <h2 class="titulo">Actividad</h2>
+            </div>
+            <div class="container-fluid hidden-xs">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
+                    <li><a href="eventos.html" target="_self">Eventos</a></li>
+                    <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
+                    <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
+                    <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
+                </ul>
             </div>
         </div>
-    </nav>
-
-
-    <div class="contenedor">
-        <div class="subheader">
-            <div class="container">
-                <div class="hidden-xs">
-                    <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#" class="active">Perfil</a></li>
-                    </ol>
-                </div>
-                <div class="container-fluid">
-                    <h2 class="titulo">Editar perfil</h2>
-                </div>
-                <div class="container-fluid hidden-xs">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs">
-                        <li><a href="actividad.html" target="_self">Actividad</a></li>
-                        <li><a href="eventos.html" target="_self">Eventos</a></li>
-                        <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
-                        <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
-                        <li class="active"><a href="perfil.html" target="_self">Editar Perfil</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="divider-1"></div>
-        <div class="contenido">
+    </div>
+    <div class="divider-1 hidden-xs"></div>
+    <!--Hasta aqui-->
+        <div class="contenido" id="sin-top">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-offset-3 col-sm-6 text-center">
