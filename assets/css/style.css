@@ -84,7 +84,7 @@ hr {border-bottom-color: #888;}
 	-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
 	-o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
 }
-.navbar2 {background: #00e8c1; padding-left:60px;}
+.navbar2 {background: #00e8c1; padding-left:20px;}
 
 .navbar-light {
 	background: #fff;
@@ -93,7 +93,7 @@ hr {border-bottom-color: #888;}
 .navbar-no-bg { background: none;}
 
 ul.navbar-nav {
-	font-size: 15px;
+	font-size: 18px;
     color: #fff;
     font-weight: 400;
     text-transform: none;
@@ -103,7 +103,7 @@ ul.navbar-nav {
 .nav>li {
     position: relative;
     display: block;
-    margin: 0 10px;
+    margin: 5px 10px;
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
@@ -407,7 +407,7 @@ ul.navbar-nav {
 .interno .panel-evento {
 	padding: 35px;
 }
-.interno .table .btn-info {padding: 2px 15px;}
+.interno .table .btn-info {padding: 2px 5px;}
 
 .interno .img-panel {
 	width: 100%;
@@ -575,7 +575,7 @@ label {
 
 /* Causas */
 
-.causas {background: #09807a; padding: 120px 5% 40px; margin-bottom: 90px;}
+.causas { padding: 120px 5% 40px; margin-bottom: 30px;}
 .icon-box-causas {margin-top:0px;}
 
 /* Chart */
@@ -744,7 +744,7 @@ footer .row-footer .col-xs-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid 
 	#home { background: url('../img/backgrounds/headermobile.jpg') center top no-repeat; background-size: cover;}
 	#causa {background-position: left top;}
 	.landing .row {padding: 0 5%;}
-	.top-content {padding: 140px 0 270px 0;}
+	.top-content {padding: 9px 0 179px 0;}
 	.top-content .text { padding-top: 15%;}
 	.kalam {font-size: 46px; line-height: .5;}
 	.top-content .text .big {font-size:46px;}
@@ -756,7 +756,7 @@ footer .row-footer .col-xs-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid 
  .home .tab-content {padding: 0 30px;}
  .home .row.row-botones .col-sm-4 {margin:25px 0;}
  .navbar { padding-top: 0; z-index: 1090;}
- .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {border-color: #101010; background: #00e8c1eb;}
+ .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {border-color: #101010; background: #00e8c1;}
  .navbar-toggle {padding-right: 0;}
  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 0px; }
  .navbar-collapse { border: 0; }
@@ -765,7 +765,7 @@ footer .row-footer .col-xs-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid 
  footer .social {width:40px; margin:5px;}
  footer .row-footer .col-xs-12.col-sm-6.col-md-9.col-lg-9 {text-align: center; padding-top:20px;}
  .home .section-description p { padding: 0; }
- .home .section-container .col-izq {margin-top: 20px; padding: 0 35px;}
+ .home .section-container .col-izq {margin-top: 1px; padding: 0 35px;}
  .home .section-container .col-der {margin-top: -150px; padding-left: 35px; padding-right: 35px;}
  .home .section-container .btn-nuevo {margin-top:-210px; margin-right: 30px}	
  .home .subheader {padding: 10% 10% 0px;}
@@ -826,7 +826,23 @@ footer .row-footer .col-xs-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid 
 	.home .tab-content { padding: 0 5px; }
 	.interno .panel-evento {
     padding: 15px;
-	}	
+	}
+    .causas {
+        padding: 80px 5% 0px;
+        margin-bottom: 0px;
+    }
+    .top-content.top-doning {
+     padding: 30px 0 11px 0; 
+    }
+    .home .cont2 .container{
+        
+    }
+    .home .img-globo {
+        padding: 0px;
+        width: 200px;
+        margin: 0 auto;
+    }
+
 }
 
 @media (max-width: 365px) {
