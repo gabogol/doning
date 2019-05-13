@@ -40,10 +40,7 @@
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
 					data-target="#top-navbar-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+					<i class="fa fa-bars fa-3x dark" aria-hidden="true"></i>
 				</button>
 				<a class="navbar-brand" href="#">
 					<h1 class="text-hide">Doning</h1>
@@ -52,11 +49,11 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="top-navbar-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Somos</a></li>
-					<li><a href="#" class="active">Causas</a></li>
-					<li><a href="#">Soy ONG</a></li>
-					<li><a href="#">Contacto</a></li>
+					<li><a href="#" class="active"><i class="fa fa-home visible-xs pull-left" aria-hidden="true"></i>Inicio </a></li>
+					<li><a href="#"><i class="fa fa-gift visible-xs pull-left" aria-hidden="true"></i>Dona tu regalo</a></li>
+					<li><a href="#"><i class="fa fa-money visible-xs pull-left" aria-hidden="true"></i>Suscripción</a></li>
+					<li><a href="#"><i class="fa fa-envelope visible-xs pull-left" aria-hidden="true"></i>Contacto</a></li>
+					<li><a href="#"><i class="fa fa-user pull-left" aria-hidden="true"></i>Ingresar</a></li>
 					<li><a class="btn btn-link-3" href="#">Regístrate</a></li>
 				</ul>
 			</div>
@@ -66,12 +63,10 @@
 	<!-- Top content -->
 	<div id="home" class="top-content">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-offset-1 col-sm-6 text wow fadeInLeft">
+			<div class="row wow animated fadeInRight">
+				<div class="col-xs-10 col-sm-7 col-lg-offset-1 col-lg-6 text">
 					<h2 class="dark big">Conectamos personas que quieren ayudar a aquellos que<br><span
 							class="kalam">más lo necesitan</span></h2>
-				</div>
-				<div class="col-sm-offset-3 col-sm-2 text2">
 				</div>
 			</div>
 		</div>
@@ -81,15 +76,23 @@
 	<div class="features-container section-container">
 		<div class="container">
 			<div class="row">
+				<a href="#" class="btn btn-success btn-nuevo pull-right visible-xs" role="button">Nuevo</a>
+				<!--Col der-->
+				<div class="col-sm-6 col-sm-push-6 col-md-5 col-md-push-5 col-der wow animated fadeInUp">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h738LfF43w4"></iframe>
+					</div>
+				</div>
 				<!--Col Izq-->
-				<div class="col-sm-5 col-izq">
-					<a href="#" class="btn btn-success pull-right" role="button">Nuevo</a>
-					<div class="divider-2"></div>
+				<div class="col-sm-6 col-sm-pull-6 col-md-5 col-md-pull-5 col-izq wow animated fadeInDown">
+					<a href="#" class="btn btn-success pull-right hidden-xs" role="button">Nuevo</a>
+					<div class="divider-2 hidden-xs"></div>
+					<div class="divider-0 visible-xs"></div>
 					<div class="row">
-						<h2 class="text-right">Academia Basura cero</h2>
-
+						<h2 class="text-center">Academia Basura cero</h2>
+						<hr>
 						<div class="row">
-							<div class="col-sm-4">
+							<div class="col-xs-4 col-md-4">
 								<div class="single-chart">
 									<svg viewBox="0 0 36 36" class="circular-chart green">
 										<path class="circle-bg" d="M18 2.0845
@@ -102,28 +105,20 @@
 									</svg>
 								</div>
 							</div>
-							<div class="col-sm-8">
-								<hr>
-								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Laboriosam omnis eaque
-									laborum deleniti fugit dolorem iure, atque eius voluptas fugiat ipsam, facere
-									harum inventore, perferendis sint obcaecati libero praesentium ducimus.</p>
+							<div class="col-xs-7 col-md-8">
+
+								<p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Laboriosam omnis eaque libero praesentium ducimus.</p>
+								<a href="causa.html" class="btn btn-success btn-lg btn-block" role="button">Quiero Donar</a>
 							</div>
 						</div>
 						<div class="divider-2"></div>
 					</div>
 				</div>
-
-				<!--Col der-->
-				<div class="col-sm-5 col-der">
-					<div class="embed-responsive embed-responsive-4by3">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h738LfF43w4"></iframe>
-					</div>
-				</div>
-				<div class="col-sm-1"></div>
+				<div class="col-md-1"></div>
 			</div>
 
-			<div class="icon-box">
+			<div class="icon-box hidden-xs hidden-sm wow animated fadeInLeft">
 				<a href="#">
 					<i class="fa fa-gift fa-3x"></i><span class="light">Dona</span> <br>tu Cumple
 				</a>
@@ -137,7 +132,7 @@
 				</a>
 			</div>
 
-			<div class="row">
+			<div class="row wow animated fadeInUp">
 				<div class="col-md-10">
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs tabs-center" role="tablist">
@@ -171,7 +166,8 @@
 													</div>
 												</div>
 												<span class="pull-right">$350.000 de <b>$20.000.000</b></span>
-												<div class="divider-1"></div>
+												<div class="divider-1 hidden-xs"></div>
+												<div class="divider-0 visible-xs"></div>
 												<a href="#">por Fundacion Cero</a>
 										</div>
 									</div>
@@ -251,72 +247,21 @@
 										class="fa fa-caret-down"></i></a>
 							</div>
 						</div>
-						<div role="tabpanel" class="tab-pane " id="cerrar">
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="thumbnail">
-										<img src="assets/img/img01.jpg" alt="...">
-										<div class="categoria">Responsabilidad social</div>
-										<div class="caption">
-											<h3>Thumbnail label</h3>
-											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati
-												iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
-												sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
-												nam eligendi?</p>
-											<p>
-												<div class="progress">
-													<div class="progress-bar" role="progressbar" aria-valuenow="60"
-														aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-														<span class="sr-only">60% Complete</span>
-													</div>
-												</div>
-												<span class="pull-right">$350.000 de <b>$20.000.000</b></span>
-												<div class="divider-1"></div>
-												<a href="#">por Fundacion Cero</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="thumbnail">
-										<img src="assets/img/img01.jpg" alt="...">
-										<div class="categoria">Responsabilidad social</div>
-										<div class="caption">
-											<h3>Thumbnail label</h3>
-											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati
-												iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
-												sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
-												nam eligendi?</p>
-											<p>
-												<div class="progress">
-													<div class="progress-bar" role="progressbar" aria-valuenow="60"
-														aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-														<span class="sr-only">60% Complete</span>
-													</div>
-												</div>
-												<span class="pull-right">$350.000 de <b>$20.000.000</b></span>
-												<div class="divider-1"></div>
-												<a href="#">por Fundacion Cero</a>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div role="tabpanel" class="tab-pane" id="cerrar">
+							...
 						</div>
 						<div role="tabpanel" class="tab-pane " id="causas">
 							...
 						</div>
 					</div>
 				</div>
-				<div class="col-md-2">
-
-				</div>
 			</div>
-
 		</div>
 		<div class="divider-2"></div>
 		<div class="container-fluid dark iconos">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-offset-1 col-md-10 text-center">
+					<div class="col-md-offset-1 col-md-10 text-center wow animated fadeInDown">
 						<h2>¿Por qué Doning?</h2>
 					</div>
 				</div>
@@ -324,93 +269,89 @@
 				<div class="row">
 					<div class="col-md-offset-1 col-md-10">
 						<div class="row">
-							<div class="col-md-4 text-center">
-								<i class="fa fa-gift fa-4x"></i><br>
-								<h5>Lorem ipsum dolor sit amet consectetur. Adipisicing elcdum porro veniam.</h5>
+							<div class="col-xs-6 col-sm-4 text-center wow animated zoomIn">
+								<i class="fa fa-money fa-4x"></i><br>
+								<h5>Te damos la oportunidad de donar como tú quieras.</h5>
 							</div>
-							<div class="col-md-4 text-center">
-								<i class="fa fa-gift fa-4x"></i><br>
-								<h5>Lorem ipsum dolor sit amet consectetur. Adipisicing elcdum porro veniam.</h5>
+							<div class="col-xs-6 col-sm-offset-0 col-sm-4 text-center wow animated zoomIn">
+								<i class="fa fa-handshake-o fa-4x"></i><br>
+								<h5>Porque ofrecemos muchas formas de ayudar ¡Ya no hay excusas!</h5>
 							</div>
-							<div class="col-md-4 text-center">
-								<i class="fa fa-gift fa-4x"></i><br>
-								<h5>Lorem ipsum dolor sit amet consectetur. Adipisicing elcdum porro veniam.</h5>
+							<div class="col-xs-6 col-xs-10 col-sm-offset-0 col-sm-4 text-center wow animated zoomIn">
+								<i class="fa fa-id-card-o fa-4x"></i><br>
+								<h5> Puedes donar a las causas que te motiven, las veces que quieras.</h5>
+							</div>
+						
+							<div class="col-xs-6 col-xs-10 col-sm-offset-0 col-sm-4 text-center wow animated zoomIn">
+								<i class="fa fa-credit-card fa-4x"></i><br>
+								<h5>Puedes suscribirte y donar a una causa diferente todos los meses.</h5>
+							</div>
+							<div class="col-xs-6 col-xs-10 col-sm-offset-0 col-sm-4 text-center wow animated zoomIn">
+								<i class="fa fa-search fa-4x"></i><br>
+								<h5>Transparentamos el destino del dinero recaudado.</h5>
+							</div>
+							
+
+							<div class="col-xs-6 col-xs-10 col-sm-offset-0 col-sm-4 text-center wow animated zoomIn">
+								<i class="fa fa-eye-slash fa-4x"></i><br>
+								<h5>Visibilizamos problemáticas que son ignoradas</h5>
 							</div>
 						</div>
 					</div>
 
 				</div>
 				<div class="divider-0"></div>
-				<div class="row">
-					<div class="col-md-offset-1 col-md-10">
-						<div class="row">
-							<div class="col-md-4 text-center">
-								<i class="fa fa-gift fa-4x"></i><br>
-								<h5>Lorem ipsum dolor sit amet consectetur. Adipisicing elcdum porro veniam.</h5>
-							</div>
-							<div class="col-md-4 text-center">
-								<i class="fa fa-gift fa-4x"></i><br>
-								<h5>Lorem ipsum dolor sit amet consectetur. Adipisicing elcdum porro veniam.</h5>
-							</div>
-							<div class="col-md-4 text-center">
-								<i class="fa fa-gift fa-4x"></i><br>
-								<h5>Lorem ipsum dolor sit amet consectetur. Adipisicing elcdum porro veniam.</h5>
-							</div>
-						</div>
-					</div>
-
-				</div>
 			</div>
-
 		</div>
-		<div class="divider-2"></div>
+		<div class="divider-2 hidden-xs"></div>
+		<div class="divider-0 visible-xs"></div>
 		<div class="container">
 			<div class="row row-botones">
-				<div class="col-md-4">
-					<a href="#" class="btn btn-success btn-lg btn-block" role="button">Crea una cuenta</a>
+				<div class="col-sm-4 wow animated zoomInLeft">
+					<a href="#" class="btn btn-success btn-lg btn-block" role="button">Inscríbete</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-4 wow animated zoomInUp">
 					<a href="#" class="btn btn-success btn-lg btn-block" role="button"> <i
-							class="fa fa-heart fa-2x pull-left"></i>Donar ahora</a>
+							class="fa fa-heart fa-2x"> </i> Donar una vez</a>
 				</div>
-				<div class="col-md-4">
-					<a href="#" class="btn btn-success btn-lg btn-block" role="button">Inscribe una causa</a>
+				<div class="col-sm-4 wow animated zoomInRight">
+					<a href="#" class="btn btn-success btn-lg btn-block" role="button">Donar mes a mes</a>
 				</div>
 			</div>
 		</div>
-		<div class="divider-2"></div>
+		<div class="divider-2 hidden-xs"></div>
+		<div class="divider-0 visible-xs"></div>
 	</div>
 
 	<!-- Footer -->
 	<footer>
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-4 pull-left">
-					<img src="assets/img/logo.png" class="img-fluid" alt="">
+			<div class="row row-footer">
+				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+					<img src="assets/img/logofooter.svg" class="img-fluid" alt="">
 				</div>
-				<div class="col-sm-8 pull-right text-right">
+				<div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
 					<div class="row">
 						<div class="col-sm-12">
-							<a href="#" target="_blank"><img src="assets/img/fb.svg" width="25px" alt=""
-									style="margin:5px;"></a>
-							<a href="#" target="_blank"><img src="assets/img/tw.svg" width="25px" alt=""
-									style="margin:5px;"></a>
+							<a href="#" target="_blank"><img src="assets/img/fb.svg" class="social" alt=""></a>
+							<a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
+							<a href="#" target="_blank"><img src="assets/img/ig.svg" class="social" alt=""></a>
 						</div>
-						<div class="col-sm-12">
+						<div class="col-sm-12 hidden-xs hidden-sm pull-right">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="#">Home</a></li>
 								<li><a href="#">Somos</a></li>
 								<li><a href="#" class="active">Causas</a></li>
 								<li><a href="#">Inscribe una causa</a></li>
+								<li><a href="#">Términos y condiciones</a></li>
 								<li><a href="#">Contacto</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-
 			</div>
 			<div class="row divider-2">
-				<div class="col-sm 12 text-center">
+				<div class="col-sm-12 text-center">
 					2019 © Doning - Todos los derechos reservados
 				</div>
 			</div>
@@ -419,18 +360,14 @@
 
 
 	<!-- Javascript -->
-	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/wow.min.js"></script>
-	<script src="assets/js/retina-1.1.0.min.js"></script>
-	<script src="assets/js/waypoints.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
-
 	<!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-		<![endif]-->
-
-
+		 <script src="assets/js/placeholder.js"></script>
+	 <![endif]-->
 </body>
 
 </html>

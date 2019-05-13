@@ -32,24 +32,25 @@
 </head>
 
 <body class="interno">
-
+    <!--Desde aqui-->
     <div id="sideNav" class="sidenav">
-        <ul class="nav ">
-            <li><a href="actividad.html" target="_self">Actividad</a></li>
+        <ul class="nav">
+            <li><a href="">Volver al home</a></li>
+            <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
             <li><a href="eventos.html" target="_self">Eventos</a></li>
             <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
-            <li class="active"><a href="subscripciones.html" target="_self">Subscripciones</a></li>
+            <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
             <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
+            <li><a href="#">Cerrar sesión</a></li>
+            <a class="closebtn">
+                <i class="fa fa-times colored" aria-hidden="true"></i>
+            </a>
         </ul>
     </div>
-
     <!-- Top menu -->
     <nav class="navbar navbar-light" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
-                    <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
-                </button>
                 <a class="navbar-brand" href="#">
                     <h1 class="text-hide">Doning</h1>
                 </a>
@@ -58,65 +59,84 @@
     </nav>
     <div class="container pull-right usuario">
         <div class="row">
-            <div class="col-sm-8 col-xs-9 text-right">
+            <div class="col-sm-8 col-xs-12 text-right">
                 <h4>Nombre de Usuario</h4>
                 <a href="">Editar perfil</a><span> | </span><a href="">Cerrar sesión</a>
             </div>
-            <div class="col-sm-4 col-xs-3">
+            <div class="col-sm-4 col-xs-3 hidden-xs">
                 <img src="assets/img/user.svg" class="text-right" alt="" width="60px">
             </div>
         </div>
     </div>
-
     <div class="contenedor">
         <div class="subheader">
+            <div class="visible-xs">
+                <button type="button" class="navbar-toggle collapsed" id="openNav">
+                    <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
+                </button>
+            </div>
             <div class="container">
                 <div class="hidden-xs">
                     <ol class="breadcrumb">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#" class="active">Subscripciones</a></li>
+                        <li><a href="#" class="active">Actividad</a></li>
                     </ol>
                 </div>
                 <div class="container-fluid">
-                    <h2 class="titulo">Subscripciones</h2>
+                    <h2 class="titulo">Actividad</h2>
                 </div>
                 <div class="container-fluid hidden-xs">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs">
-                        <li><a href="actividad.html" target="_self">Actividad</a></li>
+                        <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
                         <li><a href="eventos.html" target="_self">Eventos</a></li>
                         <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
-                        <li class="active"><a href="subscripciones.html" target="_self">Subscripciones</a></li>
+                        <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
                         <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="divider-1"></div>
-        <div class="contenido">
+        <div class="divider-1 hidden-xs"></div>
+        <!--Hasta aqui-->
+        <div class="contenido" id="sin-top">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 donacion-col">
                         <h3>Donación</h3>
                         <a href="#" class="pull-right">Editar</a>
                         <div class="divider-1"></div>
-
                         <form>
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="fa fa-user-o fa-fw"></i></span>
                                 <input type="text" class="form-control" id="Titular" placeholder="Nombre del titular">
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-sm-6">
                                     <div class="form-group input-group">
                                         <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
                                         <input type="mail" class="form-control" id="Correo" placeholder="Correo">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-sm-6">
                                     <div class="form-group input-group">
                                         <span class="input-group-addon"><i class="fa fa-mobile fa-fw"></i></span>
                                         <input type="phone" class="form-control" id="Telefono" placeholder="Teléfono">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                        <input type="text" class="form-control" id="Rut" placeholder="Rut titular">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="fa fa-money fa-fw"></i></span>
+                                        <input type="text" class="form-control" id="Donacion"
+                                            placeholder="$5.000 Mensual">
                                     </div>
                                 </div>
                             </div>
@@ -125,29 +145,19 @@
                                 <input type="text" class="form-control" id="Tarjeta" placeholder="Numero de tarjeta">
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-sm-6 col-sm-push-6" id="fechaVenc">
+                                    <a data-toggle="tooltip" class="btn"
+                                        title="<img src='assets/img/fechavencimiento.png'/>">
+                                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-sm-pull-6">
                                     <div class="form-group input-group">
                                         <span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
                                         <input type="text" class="form-control" id="Vencimiento"
                                             placeholder="Vencimiento MM/YY">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                                        <input type="text" class="form-control" id="Rut" placeholder="Rut titular">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group input-group">
-                                        <span class="input-group-addon"><i class="fa fa-money fa-fw"></i></span>
-                                        <input type="text" class="form-control" id="Donacion"
-                                            placeholder="$5.000 Mensual">
-                                    </div>
-                                </div>
-                                <div class="col-md-6"></div>
                             </div>
                             <div class="form-group">
                                 <div class="checkbox">
@@ -161,17 +171,31 @@
                         <div class="divider-0"></div>
                         <a href="#" class="btn btn-alert" role="button">SUSCRÍBEME</a>
                         <div class="divider-0"></div>
+                        <div class="row visible-xs">
+                            <div class="col-xs-7"><img src="assets/img/logo-webpay-plus-1.png" class="img-responsive"
+                                    alt=""></div>
+                            <div class="col-xs-3"><img src="assets/img/zup.png" class="text-left" alt=""></div>
+                        </div>
+                        <div class="divider-0"></div>
                         <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quibusdam illum optio
                             facilis id ea cum excepturi harum ex beatae. Eveniet, repudiandae fugit! Ipsam, quos est
                             voluptatum quo vel fuga?</small>
                     </div>
+                    <div class="divider-1 visible-xs visible-sm"></div>
                     <div class="col-md-4">
                         <h3>Información de pago</h3>
+                        
                         <div class="divider-0"></div>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quibusdam temporibus soluta
                             velit vero omnis. <br>Perspiciatis expedita numquam dicta itaque dolores eveniet officia,
                             nesciunt tempora distinctio quasi obcaecati culpa iusto?</p>
-                        <hr>
+                      
+                        <div class="row hidden-xs">
+                                    <div class="col-xs-7"><img src="assets/img/logo-webpay-plus-1.png" class="img-responsive"
+                                            alt=""></div>
+                                    <div class="col-xs-3"><img src="assets/img/zup.png" class="text-left" alt=""></div>
+                                </div>
+                          <hr>
                         <a href="#" class="">Más informacion sobre las responsabilidades</a>
                     </div>
                 </div>
@@ -182,56 +206,47 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4 pull-left">
-                    <img src="assets/img/logo.png" class="img-fluid" alt="">
+            <div class="row row-footer">
+                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+                    <img src="assets/img/logofooter.svg" class="img-fluid" alt="">
                 </div>
-                <div class="col-sm-8 pull-right text-right">
+                <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
                     <div class="row">
                         <div class="col-sm-12">
                             <a href="#" target="_blank"><img src="assets/img/fb.svg" class="social" alt=""></a>
                             <a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
+                            <a href="#" target="_blank"><img src="assets/img/ig.svg" class="social" alt=""></a>
                         </div>
-                        <div class="col-sm-12 hidden-xs">
+                        <div class="col-sm-12 hidden-xs hidden-sm pull-right">
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Somos</a></li>
                                 <li><a href="#" class="active">Causas</a></li>
                                 <li><a href="#">Inscribe una causa</a></li>
+                                <li><a href="#">Términos y condiciones</a></li>
                                 <li><a href="#">Contacto</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="row divider-2">
-                <div class="col-sm 12 text-center">
+                <div class="col-sm-12 text-center">
                     2019 © Doning - Todos los derechos reservados
                 </div>
-
             </div>
         </div>
     </footer>
 
-
     <!-- Javascript -->
-    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/retina-1.1.0.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-
     <!--[if lt IE 10]>
-                        <script src="assets/js/placeholder.js"></script>
-                    <![endif]-->
-    <script>
-        function openNav() {
-            var element = document.getElementById("sideNav");
-            element.classList.toggle("ancho");;
-        }
-    </script>
+         <script src="assets/js/placeholder.js"></script>
+     <![endif]-->
 
 </body>
 
