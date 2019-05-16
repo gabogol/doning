@@ -10,7 +10,10 @@
 
 	<!-- CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+	<!--<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -34,36 +37,37 @@
 <body class="causa">
 
 	<!-- Top menu -->
-	<nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-					data-target="#top-navbar-1">
-					<i class="fa fa-bars fa-3x dark" aria-hidden="true"></i>
-				</button>
-				<a class="navbar-brand" href="#">
-					<h1 class="text-hide">Doning</h1>
-				</a>
-			</div>
+	<nav class="navbar navbar-expand-lg navbar-inverse fixed-top navbar-no-bg" role="navigation">
+			<a class="navbar-brand" href="#">
+				<h1 class="text-hide">Doning</h1>
+			</a>
+			<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+				<i class="fa fa-bars fa-3x dark navbar-toggler-icon" aria-hidden="true"></i>
+			</button>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="top-navbar-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#" class="active"><i class="fa fa-home visible-xs pull-left" aria-hidden="true"></i>Inicio </a></li>
-					<li><a href="#"><i class="fa fa-gift visible-xs pull-left" aria-hidden="true"></i>Dona tu regalo</a></li>
-					<li><a href="#"><i class="fa fa-money visible-xs pull-left" aria-hidden="true"></i>Suscripción</a></li>
-					<li><a href="#"><i class="fa fa-envelope visible-xs pull-left" aria-hidden="true"></i>Contacto</a></li>
-					<li><a href="#"><i class="fa fa-user pull-left" aria-hidden="true"></i>Ingresar</a></li>
-					<li><a class="btn btn-link-3" href="#">Regístrate</a></li>
+				<ul class="nav navbar-nav ml-auto">
+					<li class="nav-item"><a href="#" class="nav-link active"><i class="fa fa-home d-block d-lg-none "
+								aria-hidden="true"></i>Inicio </a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-gift d-block d-lg-none"
+								aria-hidden="true"></i>Dona tu
+							regalo</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-money d-block d-lg-none"
+								aria-hidden="true" class="nav-link"></i>Suscripción</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-envelope d-block d-lg-none"
+								aria-hidden="true"></i>Contacto</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-user"
+								aria-hidden="true"></i>Ingresar</a></li>
+					<li class="nav-item"><a class="nav-link btn btn-link-3" href="#">Regístrate</a></li>
 				</ul>
 			</div>
-		</div>
-	</nav>
+		</nav>
 
 	<!-- Top content -->
 	<div id="causa" class="top-content text-center">
 		<div class="container">
 			<div class="row wow animated fadeInDown">
-				<div class="col-sm-offset-3 col-sm-6 text">
+				<div class="offset-sm-3 col-sm-6 text">
 					<h4 class="text-uppercase dark">Causa</h4>
 					<h1>Academia Basura Cero</h1>
 					<h3 class="dark"><small>Por</small>Fundación Basura</h3>
@@ -88,18 +92,18 @@
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h738LfF43w4"></iframe>
 					</div>
 					<div class="divider-0"></div>
-					<div class="row hidden-xs hidden-sm">
+					<div class="row d-none d-md-block">
 						<div class="col-sm-3">
 							<button type="button" class="btn btn-facebook btn-block"><i
-									class="fa fa-facebook fa-2x pull-left" aria-hidden="true"></i>Compartir</button>
+									class="fa fa-facebook fa-2x text-left" aria-hidden="true"></i>Compartir</button>
 						</div>
 						<div class="col-sm-3">
 							<button type="button" class="btn btn-twitter btn-block"><i
-									class="fa fa-twitter fa-2x pull-left" aria-hidden="true"></i>Compartir</button>
+									class="fa fa-twitter fa-2x text-left" aria-hidden="true"></i>Compartir</button>
 						</div>
 						<div class="col-sm-3">
 							<button type="button" class="btn btn-whatsapp btn-block"><i
-									class="fa fa-whatsapp fa-2x pull-left" aria-hidden="true"></i>Compartir</button>
+									class="fa fa-whatsapp fa-2x text-left" aria-hidden="true"></i>Compartir</button>
 						</div>
 						<div class="col-sm-3">
 							<a class="btn btn-sm" href="#">Copiar enlace
@@ -108,8 +112,8 @@
 						</div>
 					</div>
 
-					<div class="divider-0 hidden-xs hidden-sm"></div>
-					<div class="text-center hidden-xs hidden-sm">
+					<div class="divider-0 d-none d-md-block"></div>
+					<div class="text-center d-none d-md-block">
 						<a href="#" class="link-1"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>Santiago de
 							Chile</a>
 						<a href="#" class="link-1"><i class="fa fa-globe fa-2x"
@@ -121,7 +125,7 @@
 				<!--Col der-->
 				<div class="col-sm-12 col-md-6 col-der wow animated fadeInRight">
 					<div class="row">
-						<div class="col-xs-3 col-md-push-9 col-lg-4  hidden-xs hidden-sm">
+						<div class="col-3 col-lg-4 d-none d-md-block">
 							<div class="single-chart">
 								<svg viewBox="0 0 36 36" class="circular-chart green">
 									<path class="circle-bg" d="M18 2.0845
@@ -134,65 +138,65 @@
 								</svg>
 							</div>
 						</div>
-						<div class="col-md-9 col-md-pull-3 col-lg-8">
+						<div class="col-md-9 col-lg-8">
 							<h2>Llevamos: $ 4.500.700</h2>
 							<h5>Necesitamos juntar $ 20.000.000</h5>
 							<hr>
 							<form action="">
 								<div class="row">
-									<div class="col-xs-6 col-sm-6 col-md-7">
+									<div class="col-6 col-sm-6 col-md-7">
 										<div class="form-group input-group">
 											<span class="input-group-addon"><i class="fa fa-money fa-fw"></i></span>
 											<input type="text" class="form-control form-causa" placeholder="Monto">
 										</div>
 									</div>
-									<div class="col-xs-6 col-sm-6 col-md-5">
+									<div class="col-6 col-sm-6 col-md-5">
 										<div class="form-group">
 											<a class="btn btn-info btn-block" href="#">Donar Una vez</a>
 										</div>
 									</div>
 								</div>
 							</form>
-							<div class="divider-0 hidden-xs hidden-sm"></div>
+							<div class="divider-0 d-none d-md-block"></div>
 							<div class="row">
-								<div class="col-xs-12 col-sm-6 col-md-12">
+								<div class="col-12 col-sm-6 col-md-12">
 									<a class="btn btn-success btn-block" href="crear-evento-2.html#sin-top">Donar tu cumple</a>
 								</div>
-								<div class="col-xs-12 col-sm-6 col-md-12">
+								<div class="col-12 col-sm-6 col-md-12">
 									<a class="btn btn-success btn-block" href="suscripcion.html#sin-top">Donar mes a mes</a>
 								</div>
-								<div class="col-xs-12 col-sm-6 col-md-12">
+								<div class="col-12 col-sm-6 col-md-12">
 									<a class="btn btn-success btn-block" href="suscripcion.html#sin-top">Asignar lucas</a>
 								</div>
 							</div>
 							<hr class="hverde">
-							<div class="row visible-xs visible-sm">
-								<div class="col-xs-2">
+							<div class="row d-block d-md-none">
+								<div class="col-2">
 									<button type="button" class="btn btn-facebook"><i class="fa fa-facebook fa-2x"
 											aria-hidden="true"></i></button>
 								</div>
-								<div class="col-xs-2">
+								<div class="col-2">
 									<button type="button" class="btn btn-twitter"><i class="fa fa-twitter fa-2x"
 											aria-hidden="true"></i></button>
 								</div>
-								<div class="col-xs-2">
+								<div class="col-2">
 									<button type="button" class="btn btn-whatsapp"><i class="fa fa-whatsapp fa-2x"
 											aria-hidden="true"></i></button>
 								</div>
-								<div class="col-xs-6">
+								<div class="col-6">
 									<a class="btn btn-sm" href="#">Copiar enlace
 										<i class="fa fa-link"></i>
 									</a>
 								</div>
 							</div>
-							<p class="hidden-xs hidden-sm">A esta causa le faltan <strong>6 semanas</strong> para terminar, ya cuenta con <strong>55 Donners</strong> y  harecaudado un <strong>58% </strong>de lo que necesita.</p>
+							<p class="d-none d-md-block">A esta causa le faltan <strong>6 semanas</strong> para terminar, ya cuenta con <strong>55 Donners</strong> y  harecaudado un <strong>58% </strong>de lo que necesita.</p>
 						</div>
 						<div class="divider-1"></div>
 					</div>
 				</div>
 			</div>
 			<!--Row 2 Desktop-->
-			<div class="row hidden-xs">
+			<div class="row d-none d-md-block">
 				<div class="col-md-6 wow animated fadeInLeft">
 					<h4>Explicación de la causa</h4>
 					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nemo ratione minus quia ut
@@ -268,7 +272,7 @@
 							non cupiditate tenetur id ex voluptates. Vitae consequatur doloremque error vero
 							temporibus quidem
 							fuga doloribus culpa omnis?</p>
-						<a href="#" class="pull-right">15 Patrocinantes</a>
+						<a href="#" class="text-right">15 Patrocinantes</a>
 						<div class="divider-1"></div>
 						<a href="#" class="btn btn-info btn-block">Donar $5.000</a>
 					</div>
@@ -280,7 +284,7 @@
 							non cupiditate tenetur id ex voluptates. Vitae consequatur doloremque error vero
 							temporibus quidem
 							fuga doloribus culpa omnis?</p>
-						<a href="#" class="pull-right">15 Patrocinantes</a>
+						<a href="#" class="text-right">15 Patrocinantes</a>
 						<div class="divider-1"></div>
 						<a href="#" class="btn btn-info btn-block">Donar $10.000</a>
 					</div>
@@ -292,14 +296,14 @@
 							non cupiditate tenetur id ex voluptates. Vitae consequatur doloremque error vero
 							temporibus quidem
 							fuga doloribus culpa omnis?</p>
-						<a href="#" class="pull-right">15 Patrocinantes</a>
+						<a href="#" class="text-right">15 Patrocinantes</a>
 						<div class="divider-1"></div>
 						<a href="#" class="btn btn-info btn-block">Donar $20.000</a>
 					</div>
 				</div>
 			</div>
 			<!--Row 2 Mobile-->
-			<div class="visible-xs">
+			<div class="d-block d-md-none">
 				<ul class="nav nav-tabs tabs-center" role="tablist">
 					<li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab"
 							data-toggle="tab">Información</a></li>
@@ -402,7 +406,7 @@
 									non cupiditate tenetur id ex voluptates. Vitae consequatur doloremque error vero
 									temporibus quidem
 									fuga doloribus culpa omnis?</p>
-								<a href="#" class="pull-right">15 Patrocinantes</a>
+								<a href="#" class="text-right">15 Patrocinantes</a>
 								<div class="divider-1"></div>
 								<a href="#" class="btn btn-info btn-block">Donar $5.000</a>
 							</div>
@@ -414,7 +418,7 @@
 									non cupiditate tenetur id ex voluptates. Vitae consequatur doloremque error vero
 									temporibus quidem
 									fuga doloribus culpa omnis?</p>
-								<a href="#" class="pull-right">15 Patrocinantes</a>
+								<a href="#" class="text-right">15 Patrocinantes</a>
 								<div class="divider-1"></div>
 								<a href="#" class="btn btn-info btn-block">Donar $10.000</a>
 							</div>
@@ -426,7 +430,7 @@
 									non cupiditate tenetur id ex voluptates. Vitae consequatur doloremque error vero
 									temporibus quidem
 									fuga doloribus culpa omnis?</p>
-								<a href="#" class="pull-right">15 Patrocinantes</a>
+								<a href="#" class="text-right">15 Patrocinantes</a>
 								<div class="divider-1"></div>
 								<a href="#" class="btn btn-info btn-block">Donar $20.000</a>
 							</div>
@@ -441,49 +445,60 @@
 
 	<!-- Footer -->
 	<footer>
-		<div class="container">
-			<div class="row row-footer">
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
-					<img src="assets/img/logofooter.svg" class="img-fluid" alt="">
+			<div class="container">
+				<div class="row row-footer">
+					<div class="offset-1 col-10 offset-sm-0 col-sm-6 col-md-3 col-lg-3">
+						<img src="assets/img/logofooter.svg" class="img-fluid" alt="">
+					</div>
+					<div class="col-12 col-sm-6 col-md-9 col-lg-9">
+						<div class="row">
+							<div class="col-sm-12">
+								<a href="#" target="_blank"><img src="assets/img/fb.svg" class="social" alt=""></a>
+								<a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
+								<a href="#" target="_blank"><img src="assets/img/ig.svg" class="social" alt=""></a>
+							</div>
+	
+						</div>
+	
+					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
-					<div class="row">
-						<div class="col-sm-12">
-							<a href="#" target="_blank"><img src="assets/img/fb.svg" class="social" alt=""></a>
-							<a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
-							<a href="#" target="_blank"><img src="assets/img/ig.svg" class="social" alt=""></a>
-						</div>
-						<div class="col-sm-12 hidden-xs hidden-sm pull-right">
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Somos</a></li>
-								<li><a href="#" class="active">Causas</a></li>
-								<li><a href="#">Inscribe una causa</a></li>
-								<li><a href="#">Términos y condiciones</a></li>
-								<li><a href="#">Contacto</a></li>
-							</ul>
-						</div>
+				<div class="row">
+					<div class="col-sm-12 d-none d-md-block">
+						<ul class="nav justify-content-end mt-3">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Somos</a></li>
+							<li><a href="#" class="active">Causas</a></li>
+							<li><a href="#">Inscribe una causa</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+							<li><a href="#">Contacto</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row divider-2">
+					<div class="col-sm-12 text-center">
+						2019 © Doning - Todos los derechos reservados
 					</div>
 				</div>
 			</div>
-			<div class="row divider-2">
-				<div class="col-sm-12 text-center">
-					2019 © Doning - Todos los derechos reservados
-				</div>
-			</div>
-		</div>
-	</footer>
+		</footer>
 
 
 	<!-- Javascript -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>-->
+
+	<!--[if lt IE 10]>
+		 <script src="assets/js/placeholder.js"></script>
+	 <![endif]-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 	<script src="assets/js/wow.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
-	<!--[if lt IE 10]>
-			 <script src="assets/js/placeholder.js"></script>
-		 <![endif]-->
 
 </body>
 

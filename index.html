@@ -12,7 +12,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
 	<!--<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">-->
-	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -37,33 +38,43 @@
 
 	<!-- Top menu -->
 	<nav class="navbar navbar-expand-lg navbar-inverse fixed-top navbar-no-bg" role="navigation">
-				<button type="button" class="navbar-toggler collapsed" data-toggle="collapse"
-					data-target="#top-navbar-1">
-					<i class="fa fa-bars fa-3x dark navbar-toggler-icon" aria-hidden="true"></i>
-				</button>
-				<a class="navbar-brand" href="#">
-					<h1 class="text-hide">Doning</h1>
-				</a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="top-navbar-1">
-				<ul class="nav navbar-nav ml-auto">
-					<li class="nav-item"><a href="#" class="active"><i class="fa fa-home d-block d-sm-none" aria-hidden="true"></i>Inicio </a></li>
-					<li class="nav-item"><a href="#"><i class="fa fa-gift d-block d-sm-none" aria-hidden="true"></i>Dona tu regalo</a></li>
-					<li class="nav-item"><a href="#"><i class="fa fa-money d-block d-sm-none" aria-hidden="true"></i>Suscripción</a></li>
-					<li class="nav-item"><a href="#"><i class="fa fa-envelope d-block d-sm-none" aria-hidden="true"></i>Contacto</a></li>
-					<li class="nav-item"><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Ingresar</a></li>
-					<li class="nav-item"><a class="btn btn-link-3" href="#">Regístrate</a></li>
-				</ul>
+		<a class="navbar-brand" href="#">
+			<h1 class="text-hide">Doning</h1>
+		</a>
+		<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+			<i class="fa fa-bars fa-3x dark navbar-toggler-icon" aria-hidden="true"></i>
+		</button>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="top-navbar-1">
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item"><a href="#" class="nav-link active"><i class="fa fa-home d-block d-lg-none "
+							aria-hidden="true"></i>Inicio </a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-gift d-block d-lg-none"
+							aria-hidden="true"></i>Dona tu
+						regalo</a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-money d-block d-lg-none"
+							aria-hidden="true" class="nav-link"></i>Suscripción</a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-envelope d-block d-lg-none"
+							aria-hidden="true"></i>Contacto</a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-user"
+							aria-hidden="true"></i>Ingresar</a></li>
+				<li class="nav-item"><a class="nav-link btn btn-link-3" href="#">Regístrate</a></li>
+			</ul>
+		</div>
 	</nav>
 
 	<!-- Top content -->
 	<div id="home" class="top-content">
-		<div class="container">
+		<div class="container top-text">
 			<div class="row wow animated fadeInRight">
-				<div class="col-10 col-sm-7 col-lg-offset-1 col-lg-6 text">
+				<div class="col-8 col-sm-8 col-md-7 col-lg-6 text">
 					<h2 class="dark big">Conectamos personas que quieren ayudar a aquellos que<br><span
 							class="kalam">más lo necesitan</span></h2>
+				</div>
+			</div>
+			<div class="row row-nuevo">
+				<div class="col offset-8 offset-sm-9 offset-md-3">
+					<a href="#" class="btn btn-success btn-nuevo" role="button">Nuevo</a>
 				</div>
 			</div>
 		</div>
@@ -73,18 +84,14 @@
 	<div class="features-container section-container">
 		<div class="container">
 			<div class="row">
-				<a href="#" class="btn btn-success btn-nuevo float-right d-block d-sm-none" role="button">Nuevo</a>
-				
 				<!--Col Izq-->
-				<div class="col-sm-6 col-md-5 col-izq wow animated fadeInDown">
-					<a href="#" class="btn btn-success pull-right hidden-xs" role="button">Nuevo</a>
-					<div class="divider-2 hidden-xs"></div>
-					<div class="divider-0 visible-xs"></div>
+				<div class="col-12 col-md-6 col-lg-5 order-2 order-md-1 col-izq mt-1 wow animated fadeInDown">
+					<div class="divider-0"></div>
 					<div class="row">
 						<h2 class="text-center">Academia Basura cero</h2>
 						<hr>
 						<div class="row">
-							<div class="col-xs-4 col-md-4">
+							<div class="col-3 col-md-4">
 								<div class="single-chart">
 									<svg viewBox="0 0 36 36" class="circular-chart green">
 										<path class="circle-bg" d="M18 2.0845
@@ -97,26 +104,28 @@
 									</svg>
 								</div>
 							</div>
-							<div class="col-xs-7 col-md-8">
+							<div class="col-9 col-md-8">
 
 								<p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
 									Laboriosam omnis eaque libero praesentium ducimus.</p>
-								<a href="causa.html" class="btn btn-success btn-lg btn-block" role="button">Quiero Donar</a>
+								<a href="causa.html" class="btn btn-success btn-lg btn-block" role="button">Quiero
+									Donar</a>
 							</div>
 						</div>
 						<div class="divider-2"></div>
 					</div>
 				</div>
-				<div class="col-md-1"></div>
+
 				<!--Col der-->
-				<div class="col-sm-6 col-md-5 col-der wow animated fadeInUp">
+				<div class="col-12 col-md-6 col-lg-5 order-1 order-md-2 col-der wow animated fadeInUp">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h738LfF43w4"></iframe>
 					</div>
 				</div>
+				<div class="col-lg-1 order-md-3 d-none d-lg-block"></div>
 			</div>
 
-			<div class="icon-box d-none d-md-block wow animated fadeInLeft">
+			<div class="icon-box d-none d-lg-block wow animated fadeInLeft">
 				<a href="#">
 					<i class="fa fa-gift fa-3x"></i><span class="light">Dona</span> <br>tu Cumple
 				</a>
@@ -131,7 +140,7 @@
 			</div>
 
 			<div class="row wow animated fadeInUp">
-				<div class="col-md-10">
+				<div class="col-md-12 col-lg-10">
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs tabs-center" role="tablist">
 						<li role="presentation" class="active"><a href="#nuevas" aria-controls="nuevas" role="tab"
@@ -146,13 +155,14 @@
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane active" id="nuevas">
 							<div class="row">
-								<div class="col-sm-4">
-									<div class="thumbnail">
-										<img src="assets/img/img01.jpg" alt="...">
-										<div class="categoria">Responsabilidad social</div>
-										<div class="caption">
-											<h3>Thumbnail label</h3>
-											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati
+								<div class="col-12 col-md-4">
+									<div class="card">
+										<img src="assets/img/img01.jpg" class="card-img-top" alt="...">
+										<div class="categoria ml-auto.">Responsabilidad social</div>
+										<div class="card-body">
+											<h4 class="card-title">Thumbnail label</h4>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+												elit. Sed obcaecati
 												iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
 												sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
 												nam eligendi?</p>
@@ -170,13 +180,14 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-sm-4">
-									<div class="thumbnail">
-										<img src="assets/img/img01.jpg" alt="...">
-										<div class="categoria">Responsabilidad social</div>
-										<div class="caption">
-											<h3>Thumbnail label</h3>
-											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati
+								<div class="col-12 col-md-4">
+									<div class="card">
+										<img src="assets/img/img01.jpg" class="card-img-top" alt="...">
+										<div class="categoria ml-auto.">Responsabilidad social</div>
+										<div class="card-body">
+											<h4 class="card-title">Thumbnail label</h4>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+												elit. Sed obcaecati
 												iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
 												sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
 												nam eligendi?</p>
@@ -188,18 +199,20 @@
 													</div>
 												</div>
 												<span class="float-right">$350.000 de <b>$20.000.000</b></span>
-												<div class="divider-1"></div>
+												<div class="divider-1 d-none d-sm-block"></div>
+												<div class="divider-0 d-block d-sm-none"></div>
 												<a href="#">por Fundacion Cero</a>
 										</div>
 									</div>
 								</div>
-								<div class="col-sm-4">
-									<div class="thumbnail">
-										<img src="assets/img/img01.jpg" alt="...">
-										<div class="categoria">Responsabilidad social</div>
-										<div class="caption">
-											<h3>Thumbnail label</h3>
-											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati
+								<div class="col-12 col-md-4">
+									<div class="card">
+										<img src="assets/img/img01.jpg" class="card-img-top" alt="...">
+										<div class="categoria ml-auto.">Responsabilidad social</div>
+										<div class="card-body">
+											<h4 class="card-title">Thumbnail label</h4>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+												elit. Sed obcaecati
 												iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
 												sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
 												nam eligendi?</p>
@@ -211,7 +224,8 @@
 													</div>
 												</div>
 												<span class="float-right">$350.000 de <b>$20.000.000</b></span>
-												<div class="divider-1"></div>
+												<div class="divider-1 d-none d-sm-block"></div>
+												<div class="divider-0 d-block d-sm-none"></div>
 												<a href="#">por Fundacion Cero</a>
 										</div>
 									</div>
@@ -220,28 +234,86 @@
 							<div class="divider-1"></div>
 							<!--Row 2-->
 							<div class="row">
-								<div class="col-sm-4">
-									<div class="thumbnail">
-										<img src="assets/img/img01.jpg" alt="...">
+								<div class="col-12 col-md-4">
+									<div class="card">
+										<img src="assets/img/img01.jpg" class="card-img-top" alt="...">
+										<div class="categoria ml-auto.">Responsabilidad social</div>
+										<div class="card-body">
+											<h4 class="card-title">Thumbnail label</h4>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+												elit. Sed obcaecati
+												iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
+												sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
+												nam eligendi?</p>
+											<p>
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+														<span class="sr-only">60% Complete</span>
+													</div>
+												</div>
+												<span class="float-right">$350.000 de <b>$20.000.000</b></span>
+												<div class="divider-1 d-none d-sm-block"></div>
+												<div class="divider-0 d-block d-sm-none"></div>
+												<a href="#">por Fundacion Cero</a>
+										</div>
 									</div>
 								</div>
-								<div class="col-sm-4">
-									<div class="thumbnail">
-										<img src="assets/img/img01.jpg" alt="...">
-
+								<div class="col-12 col-md-4">
+									<div class="card">
+										<img src="assets/img/img01.jpg" class="card-img-top" alt="...">
+										<div class="categoria ml-auto.">Responsabilidad social</div>
+										<div class="card-body">
+											<h4 class="card-title">Thumbnail label</h4>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+												elit. Sed obcaecati
+												iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
+												sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
+												nam eligendi?</p>
+											<p>
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+														<span class="sr-only">60% Complete</span>
+													</div>
+												</div>
+												<span class="float-right">$350.000 de <b>$20.000.000</b></span>
+												<div class="divider-1 d-none d-sm-block"></div>
+												<div class="divider-0 d-block d-sm-none"></div>
+												<a href="#">por Fundacion Cero</a>
+										</div>
 									</div>
 								</div>
-								<div class="col-sm-4">
-									<div class="thumbnail">
-										<img src="assets/img/img01.jpg" alt="...">
-
+								<div class="col-12 col-md-4">
+									<div class="card">
+										<img src="assets/img/img01.jpg" class="card-img-top" alt="...">
+										<div class="categoria ml-auto.">Responsabilidad social</div>
+										<div class="card-body">
+											<h4 class="card-title">Thumbnail label</h4>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+												elit. Sed obcaecati
+												iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
+												sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
+												nam eligendi?</p>
+											<p>
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+														<span class="sr-only">60% Complete</span>
+													</div>
+												</div>
+												<span class="float-right">$350.000 de <b>$20.000.000</b></span>
+												<div class="divider-1 d-none d-sm-block"></div>
+												<div class="divider-0 d-block d-sm-none"></div>
+												<a href="#">por Fundacion Cero</a>
+										</div>
 									</div>
 								</div>
 							</div>
 
 							<div class="mascara"></div>
-							<div class="row text-center">
-								<a href="#" class="btn btn-warning" role="button"> Ver más <i
+							<div class="row">
+								<a href="#" class="btn btn-warning mx-auto" role="button"> Ver más <i
 										class="fa fa-caret-down"></i></a>
 							</div>
 						</div>
@@ -259,40 +331,37 @@
 		<div class="container-fluid dark iconos">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-offset-1 col-md-10 text-center wow animated fadeInDown">
+					<div class="offset-md-1 col-md-10 text-center wow animated fadeInDown">
 						<h2>¿Por qué Doning?</h2>
 					</div>
 				</div>
 				<div class="divider-0"></div>
 				<div class="row">
-					<div class="col-md-offset-1 col-md-10">
+					<div class="offset-md-1 col-md-10">
 						<div class="row">
-							<div class="col-6 col-sm-4 text-center wow animated zoomIn">
+							<div class="col-6 col-sm-4 pb-5 text-center wow animated zoomIn">
 								<i class="fa fa-money fa-4x"></i><br>
-								<h5>Te damos la oportunidad de donar como tú quieras.</h5>
+								<h6>Te damos la oportunidad de donar como tú quieras.</h6>
 							</div>
-							<div class="col-6 col-sm-offset-0 col-sm-4 text-center wow animated zoomIn">
+							<div class="col-6 col-sm-4 pb-5 text-center wow animated zoomIn">
 								<i class="fa fa-handshake-o fa-4x"></i><br>
-								<h5>Porque ofrecemos muchas formas de ayudar ¡Ya no hay excusas!</h5>
+								<h6>Porque ofrecemos muchas formas de ayudar ¡Ya no hay excusas!</h6>
 							</div>
-							<div class="col-6 col-ms-10 col-sm-offset-0 col-sm-4 text-center wow animated zoomIn">
+							<div class="col-6 col-sm-4 pb-5 text-center wow animated zoomIn">
 								<i class="fa fa-id-card-o fa-4x"></i><br>
-								<h5> Puedes donar a las causas que te motiven, las veces que quieras.</h5>
+								<h6> Puedes donar a las causas que te motiven, las veces que quieras.</h6>
 							</div>
-						
-							<div class="col-6 col-sm-10 col-sm-offset-0 col-sm-4 text-center wow animated zoomIn">
+							<div class="col-6 col-sm-4 text-center wow animated zoomIn">
 								<i class="fa fa-credit-card fa-4x"></i><br>
-								<h5>Puedes suscribirte y donar a una causa diferente todos los meses.</h5>
+								<h6>Puedes suscribirte y donar a una causa diferente todos los meses.</h6>
 							</div>
-							<div class="col-6 col-sm-10 col-sm-offset-0 col-sm-4 text-center wow animated zoomIn">
+							<div class="col-6 col-sm-4 text-center wow animated zoomIn">
 								<i class="fa fa-search fa-4x"></i><br>
-								<h5>Transparentamos el destino del dinero recaudado.</h5>
+								<h6>Transparentamos el destino del dinero recaudado.</h6>
 							</div>
-							
-
-							<div class="col-6 col-xs-10 col-sm-offset-0 col-sm-4 text-center wow animated zoomIn">
+							<div class="col-6 col-sm-4 text-center wow animated zoomIn">
 								<i class="fa fa-eye-slash fa-4x"></i><br>
-								<h5>Visibilizamos problemáticas que son ignoradas</h5>
+								<h6>Visibilizamos problemáticas que son ignoradas</h6>
 							</div>
 						</div>
 					</div>
@@ -309,8 +378,8 @@
 					<a href="#" class="btn btn-success btn-lg btn-block" role="button">Inscríbete</a>
 				</div>
 				<div class="col-sm-4 wow animated zoomInUp">
-					<a href="#" class="btn btn-success btn-lg btn-block" role="button"> <i
-							class="fa fa-heart fa-2x"> </i> Donar una vez</a>
+					<a href="#" class="btn btn-success btn-lg btn-block" role="button"> <i class="fa fa-heart fa-2x">
+						</i> Donar una vez</a>
 				</div>
 				<div class="col-sm-4 wow animated zoomInRight">
 					<a href="#" class="btn btn-success btn-lg btn-block" role="button">Donar mes a mes</a>
@@ -325,7 +394,7 @@
 	<footer>
 		<div class="container">
 			<div class="row row-footer">
-				<div class="col-offset-1 col-10 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+				<div class="offset-1 col-10 offset-sm-0 col-sm-6 col-md-3 col-lg-3">
 					<img src="assets/img/logofooter.svg" class="img-fluid" alt="">
 				</div>
 				<div class="col-12 col-sm-6 col-md-9 col-lg-9">
@@ -335,17 +404,21 @@
 							<a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
 							<a href="#" target="_blank"><img src="assets/img/ig.svg" class="social" alt=""></a>
 						</div>
-						<div class="col-sm-12 d-none d-md-block float-right">
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Somos</a></li>
-								<li><a href="#" class="active">Causas</a></li>
-								<li><a href="#">Inscribe una causa</a></li>
-								<li><a href="#">Términos y condiciones</a></li>
-								<li><a href="#">Contacto</a></li>
-							</ul>
-						</div>
+
 					</div>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 d-none d-md-block">
+					<ul class="nav justify-content-end mt-3">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Somos</a></li>
+						<li><a href="#" class="active">Causas</a></li>
+						<li><a href="#">Inscribe una causa</a></li>
+						<li><a href="#">Términos y condiciones</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
 				</div>
 			</div>
 			<div class="row divider-2">
@@ -361,12 +434,16 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>-->
-	
+
 	<!--[if lt IE 10]>
 		 <script src="assets/js/placeholder.js"></script>
 	 <![endif]-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 	<script src="assets/js/wow.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
 </body>
