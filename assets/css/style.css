@@ -296,11 +296,17 @@ ul.navbar-nav {
 .registro .olvido:hover {color: #8fffde}
 
 .interno {background: #f7f7f7; color: #888;}
+.interno .nav > li {
+	position: relative;
+	display: block;
+	margin: 10px 25px 7px 25px;
+}
 .interno .navbar {height: 81px;}
 .interno .contenedor {padding-bottom: 10%}
 .interno .subheader {background: #f5f5f5; border-bottom: 1px solid #dadada;}
 .interno .subheader .container, .interno .contenido .container {padding: 50px 5% 0 5%;}
 .interno .usuario { width: 390px; margin-top: -35px; padding-right: 5%;}
+.interno .usuario h4 {font-size: 1.1rem;}
 .interno .navbar .btn-success {margin-top:15px;}
 .interno .breadcrumb {
 	margin-bottom: 20px;
@@ -327,6 +333,7 @@ ul.navbar-nav {
 	border: 0;
 	border-radius: 0;
 	color:#999;
+	padding: 10px 5px;
 }
 .interno .nav-tabs>li>a:hover {
 	color:#555;
@@ -338,6 +345,7 @@ ul.navbar-nav {
 	padding: 10px 20px;
 	text-transform: uppercase;
 }
+.interno .table {color: #888;}
 .interno .numero {
 	border-radius: 100%;
 	border: 2px solid #dadada;
@@ -651,9 +659,7 @@ footer .row-footer .col-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #ff
 }
 
 @media (min-width: 1199px) {
-	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-		margin-left: 30%;
-	}
+	
 	.causa .col-izq {margin-top: -50px;}
 }
 
@@ -700,6 +706,7 @@ footer .row-footer .col-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #ff
 	.home .fa-3x.don-ico {margin: 0 15px 95px 0;}
 	.navbar-brand {margin-left: 1rem;}
 	.home .row-nuevo {position: relative; top: 120px;}
+	.interno .nav > li {margin: 10px 5px 7px 5px;}
 
 }
 
@@ -747,6 +754,9 @@ footer .row-footer .col-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #ff
 		
 	.causa .btn.btn-facebook, .causa .btn.btn-twitter, .causa .btn.btn-whatsapp {padding: 5px 5px; border-radius: 50%; width: 35px;}
 	.btn-evento .btn.btn-facebook, .btn-evento .btn.btn-twitter, .btn-evento .btn.btn-whatsapp {padding: 5px 5px; border-radius: 50%; width: 35px;}
+	.interno .nav > li {margin: 10px 5px 0 5px;}
+	.interno .nav-tabs > li > a {padding: 10px 8px;}
+
 }
 
 
@@ -768,7 +778,7 @@ footer .row-footer .col-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #ff
  .home .row-nuevo {position: relative; top: 100px;}
  .navbar { padding-top: 0; z-index: 1090;}
  .navbar-toggle {padding-right: 0;}
- .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 0px; }
+ .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: -15px; }
  .navbar-collapse { border: 0; }
  .navbar-inverse ul.navbar-nav li a.btn-link-3 { margin: 10px; }
  footer .social {width:40px; margin:5px;}
@@ -788,13 +798,14 @@ footer .row-footer .col-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #ff
  .navbar-inverse ul.navbar-nav li a:hover { color: #ddd; border-bottom: none; }
  .navbar-inverse ul.navbar-nav li a.active { color: #fff; outline: 0; border-bottom: none; }
  .interno .navbar { padding-top: 0; background: #fff; }
+ .interno #openNav { font-size: .8rem; padding: 20px 25px; }
  .interno .usuario {margin-top: -65px; width: 100%; z-index: 9999; position: relative; z-index: 1100;}
  .interno .usuario h4 {margin: 3px 0;}
  .interno h2.titulo { border-bottom: 3px solid #00e8c1; padding-bottom: 10px; margin-bottom: 0;}
  .interno .btn.btn-twitter.btn-block, .interno .btn.btn-facebook.btn-block, .interno .btn.btn-whatsapp.btn-block, .interno .btn.btn-primary.btn-block {margin-top: 5px;}
  .circular-chart {max-height: 200px;}
 .interno .navbar .btn-success, .registro .navbar .btn-success, .home .navbar .btn-success {margin-top: -85px;}
-.interno .subheader .container, .interno .contenido .container {padding: 30px 5% 0 5%;}
+.interno .subheader .container, .interno .contenido .container {padding: 60px 15px 0;}
 .registro .panel {margin-top: 30px;}
 .interno .panel-donacion {padding: 0px;}
 .interno h3.donacion {margin-top:0px; margin-bottom:0px;}
@@ -807,6 +818,14 @@ footer .row-footer .col-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #ff
 	h1 { font-size: 36px;}
 	h2 {font-size: 30px;}
 	h4 {font-size: 16px;}
+	.navbar-brand {
+		width: 140px;
+	}
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: -15px; }
+	.interno .usuario h4 {
+    font-size: 1rem;
+}
+.interno .usuario .usuario-link {font-size: .8rem;}
 	.kalam {font-size: 35px; line-height: .5;}
 	.home .top-content .container.top-text {padding: 10px 15px;}
 	.top-content .text { padding-top: 15%;}
@@ -814,7 +833,6 @@ footer .row-footer .col-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #ff
 	footer .social {width:40px; margin:5px;}
 	footer .row-footer {margin:0 auto;}
 	.interno .usuario {width: 100%;}
-	.interno .usuario a {font-size: 1.3rem;}
 	.home .nav-tabs, .causa .nav-tabs {
 		display: flex;
 		justify-content: center;
@@ -853,8 +871,6 @@ footer .row-footer .col-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #ff
 }
 
 @media (max-width: 365px) {
-	.navbar-brand {
-		width: 120px;
-	}
+	
 	.top-content .text .big {font-size: 27px; padding: 20px 10px;}
 }
