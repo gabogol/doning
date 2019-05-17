@@ -11,10 +11,13 @@
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,34 +36,36 @@
 </head>
 
 <body class="home">
-   <!-- Top menu -->
-	<nav class="navbar2 navbar-inverse navbar-fixed-top " role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-					data-target="#top-navbar-1">
-					<i class="fa fa-bars fa-3x dark" aria-hidden="true"></i>
-				</button>
-				<a class="navbar-brand" href="#">
-					<h1 class="text-hide">Doning</h1>
-				</a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="top-navbar-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#" class="active"><i class="fa fa-home visible-xs pull-left" aria-hidden="true"></i>Inicio </a></li>
-					<li><a href="#"><i class="fa fa-gift visible-xs pull-left" aria-hidden="true"></i>Dona tu regalo</a></li>
-					<li><a href="#"><i class="fa fa-money visible-xs pull-left" aria-hidden="true"></i>Suscripción</a></li>
-					<li><a href="#"><i class="fa fa-envelope visible-xs pull-left" aria-hidden="true"></i>Contacto</a></li>
-					<li><a href="#"><i class="fa fa-user pull-left" aria-hidden="true"></i>Ingresar</a></li>
-					<li><a class="btn btn-link-3" href="#">Regístrate</a></li>
-				</ul>
-			</div>
+    <!-- Top menu -->
+	<nav class="nav navbar-2 navbar-expand-lg navbar-inverse fixed-top navbar-no-bg" role="navigation">
+		<a class="navbar-brand" href="#">
+			<h1 class="text-hide">Doning</h1>
+		</a>
+		<button type="button" class="navbar-toggler collapsed ml-auto" data-toggle="collapse" data-target="#top-navbar-1">
+			<i class="fa fa-bars fa-3x dark navbar-toggler-icon" aria-hidden="true"></i>
+		</button>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="top-navbar-1">
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item"><a href="#" class="nav-link active"><i class="fa fa-home d-block d-lg-none "
+							aria-hidden="true"></i>Inicio </a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-gift d-block d-lg-none"
+							aria-hidden="true"></i>Dona tu
+						regalo</a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-money d-block d-lg-none"
+							aria-hidden="true" class="nav-link"></i>Suscripción</a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-envelope d-block d-lg-none"
+							aria-hidden="true"></i>Contacto</a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-user"
+							aria-hidden="true"></i>Ingresar</a></li>
+				<li class="nav-item"><a class="nav-link btn btn-link-3" href="#">Regístrate</a></li>
+			</ul>
 		</div>
 	</nav>
+
     <div class="container-fluid causas">
         <div class="row text-center">
-            <div class="col-md-offset-1 col-md-10">
+            <div class="md-offset-1 col-md-10">
                 <h1>Nuestras causas</h1>
                 <hr>
             </div>
@@ -70,7 +75,7 @@
     <!-- Features -->
     <div class="features-container section-container">
         <div class="container">
-            <div class="icon-box icon-box-causas hidden-xs hidden-sm wow animated fadeInLeft">
+            <div class="icon-box icon-box-causas d-none d-lg-block wow animated fadeInLeft">
                 <a href="#">
                     <i class="fa fa-gift fa-3x"></i><span class="light">Dona</span> <br>tu Cumple
                 </a>
@@ -83,10 +88,10 @@
                     <i class="fa fa-heart fa-3x"></i><span class="light">Dona</span> <br>ahora
                 </a>
             </div>
-            
+
 
             <div class="row wow animated fadeInUp">
-                <div class="col-md-10">
+                <div class="col-12 col-lg-10 col-xl-12">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs tabs-center" role="tablist">
                         <li role="presentation" class="active"><a href="#nuevas" aria-controls="nuevas" role="tab"
@@ -96,34 +101,19 @@
                         <li role="presentation"><a href="#causas" aria-controls="causas" role="tab"
                                 data-toggle="tab">Causas</a></li>
                     </ul>
-                    <div class="divider-0"></div>
-                <div class="col-xs-8 col-offset-xs-4">
-                    <div class="input-group">
-                      <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filtrar por interés <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Gente con problemas</a></li>
-                          <li><a href="#">Perritos lindos</a></li>
-                          <li><a href="#">Otros</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Necesitamos dinero</a></li>
-                        </ul>
-                      </div><!-- /btn-group -->
-                    </div><!-- /input-group -->
-                </div><!-- /.col-lg-12 -->
-                 <div class="divider-1"></div>
-
+                    <div class="divider-1"></div>
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="nuevas">
                             <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="thumbnail">
-                                        <img src="assets/img/img01.jpg" alt="...">
-                                        <div class="categoria">Responsabilidad social</div>
-                                        <div class="caption">
-                                            <h3>Thumbnail label</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati
+                                <div class="col-12 col-md-4">
+                                    <div class="card">
+                                        <img src="assets/img/img01.jpg" class="card-img-top" alt="...">
+                                        <div class="categoria ml-auto">Responsabilidad social</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Thumbnail label</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Sed obcaecati
                                                 iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
                                                 sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
                                                 nam eligendi?</p>
@@ -134,20 +124,21 @@
                                                         <span class="sr-only">60% Complete</span>
                                                     </div>
                                                 </div>
-                                                <span class="pull-right">$350.000 de <b>$20.000.000</b></span>
-                                                <div class="divider-1 hidden-xs"></div>
-                                                <div class="divider-0 visible-xs"></div>
+                                                <span class="float-right">$350.000 de <b>$20.000.000</b></span>
+                                                <div class="divider-1 d-none d-sm-block"></div>
+                                                <div class="divider-0 d-block d-sm-none"></div>
                                                 <a href="#">por Fundacion Cero</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="thumbnail">
-                                        <img src="assets/img/img01.jpg" alt="...">
-                                        <div class="categoria">Responsabilidad social</div>
-                                        <div class="caption">
-                                            <h3>Thumbnail label</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati
+                                <div class="col-12 col-md-4">
+                                    <div class="card">
+                                        <img src="assets/img/img01.jpg" class="card-img-top" alt="...">
+                                        <div class="categoria ml-auto">Responsabilidad social</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Thumbnail label</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Sed obcaecati
                                                 iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
                                                 sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
                                                 nam eligendi?</p>
@@ -158,19 +149,21 @@
                                                         <span class="sr-only">60% Complete</span>
                                                     </div>
                                                 </div>
-                                                <span class="pull-right">$350.000 de <b>$20.000.000</b></span>
-                                                <div class="divider-1"></div>
+                                                <span class="float-right">$350.000 de <b>$20.000.000</b></span>
+                                                <div class="divider-1 d-none d-sm-block"></div>
+                                                <div class="divider-0 d-block d-sm-none"></div>
                                                 <a href="#">por Fundacion Cero</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="thumbnail">
-                                        <img src="assets/img/img01.jpg" alt="...">
-                                        <div class="categoria">Responsabilidad social</div>
-                                        <div class="caption">
-                                            <h3>Thumbnail label</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati
+                                <div class="col-12 col-md-4">
+                                    <div class="card">
+                                        <img src="assets/img/img01.jpg" class="card-img-top" alt="...">
+                                        <div class="categoria ml-auto">Responsabilidad social</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Thumbnail label</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Sed obcaecati
                                                 iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
                                                 sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
                                                 nam eligendi?</p>
@@ -181,22 +174,25 @@
                                                         <span class="sr-only">60% Complete</span>
                                                     </div>
                                                 </div>
-                                                <span class="pull-right">$350.000 de <b>$20.000.000</b></span>
-                                                <div class="divider-1"></div>
+                                                <span class="float-right">$350.000 de <b>$20.000.000</b></span>
+                                                <div class="divider-1 d-none d-sm-block"></div>
+                                                <div class="divider-0 d-block d-sm-none"></div>
                                                 <a href="#">por Fundacion Cero</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="divider-1"></div>
+                            <!--Row 2-->
                             <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="thumbnail">
-                                        <img src="assets/img/img01.jpg" alt="...">
-                                        <div class="categoria">Responsabilidad social</div>
-                                        <div class="caption">
-                                            <h3>Thumbnail label</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati
+                                <div class="col-12 col-md-4">
+                                    <div class="card">
+                                        <img src="assets/img/img01.jpg" class="card-img-top" alt="...">
+                                        <div class="categoria ml-auto">Responsabilidad social</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Thumbnail label</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Sed obcaecati
                                                 iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
                                                 sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
                                                 nam eligendi?</p>
@@ -207,20 +203,21 @@
                                                         <span class="sr-only">60% Complete</span>
                                                     </div>
                                                 </div>
-                                                <span class="pull-right">$350.000 de <b>$20.000.000</b></span>
-                                                <div class="divider-1 hidden-xs"></div>
-                                                <div class="divider-0 visible-xs"></div>
+                                                <span class="float-right">$350.000 de <b>$20.000.000</b></span>
+                                                <div class="divider-1 d-none d-sm-block"></div>
+                                                <div class="divider-0 d-block d-sm-none"></div>
                                                 <a href="#">por Fundacion Cero</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="thumbnail">
-                                        <img src="assets/img/img01.jpg" alt="...">
-                                        <div class="categoria">Responsabilidad social</div>
-                                        <div class="caption">
-                                            <h3>Thumbnail label</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati
+                                <div class="col-12 col-md-4">
+                                    <div class="card">
+                                        <img src="assets/img/img01.jpg" class="card-img-top" alt="...">
+                                        <div class="categoria ml-auto">Responsabilidad social</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Thumbnail label</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Sed obcaecati
                                                 iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
                                                 sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
                                                 nam eligendi?</p>
@@ -231,19 +228,21 @@
                                                         <span class="sr-only">60% Complete</span>
                                                     </div>
                                                 </div>
-                                                <span class="pull-right">$350.000 de <b>$20.000.000</b></span>
-                                                <div class="divider-1"></div>
+                                                <span class="float-right">$350.000 de <b>$20.000.000</b></span>
+                                                <div class="divider-1 d-none d-sm-block"></div>
+                                                <div class="divider-0 d-block d-sm-none"></div>
                                                 <a href="#">por Fundacion Cero</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="thumbnail">
-                                        <img src="assets/img/img01.jpg" alt="...">
-                                        <div class="categoria">Responsabilidad social</div>
-                                        <div class="caption">
-                                            <h3>Thumbnail label</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati
+                                <div class="col-12 col-md-4">
+                                    <div class="card">
+                                        <img src="assets/img/img01.jpg" class="card-img-top" alt="...">
+                                        <div class="categoria ml-auto">Responsabilidad social</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Thumbnail label</h4>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Sed obcaecati
                                                 iste ducimus, vitae aliquam, laboriosam quasi omnis nulla odio natus
                                                 sapiente facilis velit, necessitatibus ex consequuntur deleniti dolorum
                                                 nam eligendi?</p>
@@ -254,13 +253,20 @@
                                                         <span class="sr-only">60% Complete</span>
                                                     </div>
                                                 </div>
-                                                <span class="pull-right">$350.000 de <b>$20.000.000</b></span>
-                                                <div class="divider-1"></div>
+                                                <span class="float-right">$350.000 de <b>$20.000.000</b></span>
+                                                <div class="divider-1 d-none d-sm-block"></div>
+                                                <div class="divider-0 d-block d-sm-none"></div>
                                                 <a href="#">por Fundacion Cero</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="cerrar">
+                            ...
+                        </div>
+                        <div role="tabpanel" class="tab-pane " id="causas">
+                            ...
                         </div>
                     </div>
                 </div>
@@ -273,27 +279,29 @@
     <footer>
         <div class="container">
             <div class="row row-footer">
-                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+                <div class="offset-1 col-10 offset-sm-0 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/img/logofooter.svg" class="img-fluid" alt="">
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-9">
                     <div class="row">
                         <div class="col-sm-12">
                             <a href="#" target="_blank"><img src="assets/img/fb.svg" class="social" alt=""></a>
                             <a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
                             <a href="#" target="_blank"><img src="assets/img/ig.svg" class="social" alt=""></a>
                         </div>
-                        <div class="col-sm-12 hidden-xs hidden-sm pull-right">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Somos</a></li>
-                                <li><a href="#" class="active">Causas</a></li>
-                                <li><a href="#">Inscribe una causa</a></li>
-                                <li><a href="#">Términos y condiciones</a></li>
-                                <li><a href="#">Contacto</a></li>
-                            </ul>
-                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 d-none d-md-block">
+                    <ul class="nav justify-content-end mt-3">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Somos</a></li>
+                        <li><a href="#" class="active">Causas</a></li>
+                        <li><a href="#">Inscribe una causa</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="row divider-2">
@@ -303,16 +311,22 @@
             </div>
         </div>
     </footer>
-
-
     <!-- Javascript -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/js/wow.min.js"></script>
-	<script src="assets/js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>-->
+
     <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
+ <script src="assets/js/placeholder.js"></script>
+<![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
