@@ -10,7 +10,10 @@
 
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+    <!--<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -33,79 +36,77 @@
 
 <body class="interno">
 
-<!--Desde aqui-->
-<div id="sideNav" class="sidenav">
-    <ul class="nav">
-        <li><a href="">Volver al home</a></li>
-        <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
-        <li><a href="eventos.html" target="_self">Eventos</a></li>
-        <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
-        <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
-        <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
-        <li><a href="#">Cerrar sesión</a></li>
-        <a class="closebtn">
-            <i class="fa fa-times colored" aria-hidden="true"></i>
-        </a>
-    </ul>
-</div>
+    <div id="sideNav" class="sidenav">
+        <ul class="nav navbar-nav">
+            <li><a href="">Volver al home</a></li>
+            <li><a href="actividad.html" target="_self">Actividad</a></li>
+            <li><a href="eventos.html" target="_self">Eventos</a></li>
+            <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
+            <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
+            <li class="active"><a href="perfil.html" target="_self">Editar Perfil</a></li>
+            <li><a href="#">Cerrar sesión</a></li>
+            <a class="closebtn">
+                <i class="fa fa-times colored" aria-hidden="true"></i>
+            </a>
+        </ul>
+    </div>
 
-<!-- Top menu -->
-<nav class="navbar navbar-light" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
+    <!-- Top menu -->
+    <nav class="navbar navbar-light" role="navigation">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <h1 class="text-hide">Doning</h1>
             </a>
         </div>
-    </div>
-</nav>
-<div class="container pull-right usuario">
-    <div class="row">
-        <div class="col-sm-8 col-xs-12 text-right">
-            <h4>Nombre de Usuario</h4>
-            <a href="">Editar perfil</a><span> | </span><a href="">Cerrar sesión</a>
+    </nav>
+    <div class="container float-right usuario">
+        <div class="row">
+            <div class="col-12 col-md-8 mt-2 text-right">
+                <h4>Nombre de Usuario</h4>
+                <a href="" class="usuario-link">Editar perfil</a><span> | </span><a href="" class="usuario-link">Cerrar
+                    sesión</a>
+            </div>
+            <div class="col-3 col-md-4 d-none d-md-block">
+                <img src="assets/img/user.svg" class="text-right" alt="" width="60px">
+            </div>
         </div>
-        <div class="col-sm-4 col-xs-3 hidden-xs">
-            <img src="assets/img/user.svg" class="text-right" alt="" width="60px">
-        </div>
     </div>
-</div>
 
-<div class="contenedor">
-    <div class="subheader">
-        <div class="visible-xs">
-            <button type="button" class="navbar-toggle collapsed" id="openNav">
-                <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
-            </button>
+    <div class="contenedor" id="sin-top">
+        <div class="subheader">
+            <div class="d-block d-md-none float-right">
+                <button type="button" class="navbar-toggler collapsed" id="openNav">
+                    <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="container">
+                <nav aria-label="breadcrumb" class="d-none d-md-block mb-5">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active"><a href="#" class="active">Editar perfil</a></li>
+                    </ol>
+                </nav>
+                <div class="container-fluid">
+                    <h2 class="titulo">Editar perfil</h2>
+                </div>
+                <div class="container-fluid d-none d-md-block">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a href="actividad.html" target="_self">Actividad</a></li>
+                        <li><a href="eventos.html" target="_self">Eventos</a></li>
+                        <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
+                        <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
+                        <li class="active"><a href="perfil.html" target="_self">Editar Perfil</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <div class="hidden-xs">
-                <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" class="active">Actividad</a></li>
-                </ol>
-            </div>
-            <div class="container-fluid">
-                <h2 class="titulo">Actividad</h2>
-            </div>
-            <div class="container-fluid hidden-xs">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
-                    <li><a href="eventos.html" target="_self">Eventos</a></li>
-                    <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
-                    <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
-                    <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="divider-1 hidden-xs"></div>
-    <!--Hasta aqui-->
+        <div class="divider-1 d-none d-md-block"></div>
+        <!--Hasta aqui-->
         <div class="contenido" id="sin-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-offset-3 col-sm-6 text-center">
+                    <div class="offset-2 col-8 offset-lg-3 col-lg-6 text-center">
                         <div class="divider-1"></div>
                         <img src="assets/img/user.svg" class="img-fluid" alt="" width="140px">
                         <div class="divider-0"></div>
@@ -127,24 +128,37 @@
                         </form>
                         <div class="divider-0"></div>
                         <p class="lead">Me interesan causas relacionadas con:</p>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox1" value="option1"> Animales
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox2" value="option2"> Ayuda humintaria
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox3" value="option3"> Exclusión social
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox4" value="option4"> Medio ambiente
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox3" value="option3"> Salud
-                        </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox3" value="option3"> Superación pobreza
-                        </label>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="option1"> Animales
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="option2"> Ayuda humintaria
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox3" value="option3"> Exclusión social
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox4" value="option4"> Medio ambiente
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox3" value="option3"> Salud
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox3" value="option3"> Superación pobreza
+                            </label>
+                        </div>
                         <div class="divider-0"></div>
                         <a href="" class="btn btn-success" role="button">Guardar</a><a href="" class="btn btn-success"
                             role="button">Cancelar</a>
@@ -160,27 +174,29 @@
     <footer>
         <div class="container">
             <div class="row row-footer">
-                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+                <div class="offset-1 col-10 offset-sm-0 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/img/logofooter.svg" class="img-fluid" alt="">
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-9">
                     <div class="row">
                         <div class="col-sm-12">
                             <a href="#" target="_blank"><img src="assets/img/fb.svg" class="social" alt=""></a>
                             <a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
                             <a href="#" target="_blank"><img src="assets/img/ig.svg" class="social" alt=""></a>
                         </div>
-                        <div class="col-sm-12 hidden-xs hidden-sm pull-right">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Somos</a></li>
-                                <li><a href="#" class="active">Causas</a></li>
-                                <li><a href="#">Inscribe una causa</a></li>
-                                <li><a href="#">Términos y condiciones</a></li>
-                                <li><a href="#">Contacto</a></li>
-                            </ul>
-                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 d-none d-md-block">
+                    <ul class="nav justify-content-end mt-3">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Somos</a></li>
+                        <li><a href="#" class="active">Causas</a></li>
+                        <li><a href="#">Inscribe una causa</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="row divider-2">
@@ -194,12 +210,19 @@
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>-->
+
     <!--[if lt IE 10]>
          <script src="assets/js/placeholder.js"></script>
      <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
 
 </body>
 

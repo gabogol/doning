@@ -36,12 +36,11 @@
 
 <body class="interno">
 
-    <!--Desde aqui-->
     <div id="sideNav" class="sidenav">
-        <ul class="nav">
+        <ul class="nav navbar-nav">
             <li><a href="">Volver al home</a></li>
-            <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
-            <li><a href="eventos.html" target="_self">Eventos</a></li>
+            <li class=""><a href="actividad.html" target="_self">Actividad</a></li>
+            <li class="active"><a href="eventos.html" target="_self">Eventos</a></li>
             <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
             <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
             <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
@@ -72,24 +71,24 @@
         </div>
     </div>
 
-    <div class="contenedor">
-        <div class="subheader"> 
-            <div class=" d-block d-sm-none">
-                <button type="button" class="navbar-toggle collapsed" id="openNav">
+    <div class="contenedor" id="sin-top">
+        <div class="subheader">
+            <div class="d-block d-md-none float-right">
+                <button type="button" class="navbar-toggler collapsed" id="openNav">
                     <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="container">
-                <div class="d-none d-sm-block">
+                <nav aria-label="breadcrumb" class="d-none d-md-block mb-5">
                     <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#" class="active">Actividad</a></li>
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active"><a href="#" class="active">Eventos</a></li>
                     </ol>
-                </div>
+                </nav>
                 <div class="container-fluid">
-                    <h2 class="titulo">Actividad</h2>
+                    <h2 class="titulo">Eventos</h2>
                 </div>
-                <div class="container-fluid d-none d-sm-block">
+                <div class="container-fluid d-none d-md-block">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
@@ -101,7 +100,7 @@
                 </div>
             </div>
         </div>
-        <div class="divider-1 d-none d-sm-block"></div>
+        <div class="divider-1 d-none d-md-block"></div>
         <!--Hasta aqui-->
         <div class="contenido" id="sin-top">
             <div class="container">

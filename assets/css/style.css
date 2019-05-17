@@ -178,7 +178,7 @@ ul.navbar-nav {
 .home h2.titulo2 {font-weight: 900; }
 .home .cont2 {background: url('../img/backgrounds/bgris02.jpg') top center no-repeat; background-size: cover;}
 .home .cont2 .container {padding-top: 160px;}
-.home .panel-title {font-size: 20px;}
+.home .card-title {font-size: 20px;}
 .home .panel-default {border: 0 !important;}
 .home .panel-default > .panel-heading + .panel-collapse > .panel-body {border-top: 0; background:#f7f7f7; padding: 40px;}
 .home .panel-default > .panel-heading {padding: 30px;}
@@ -398,11 +398,11 @@ ul.navbar-nav {
 }
 .interno .col-sticky {
 	position: sticky;
-	right: 0;
-	top: 5px;
+	position: -webkit-sticky;
+	top: 0;
 	margin-top: 10px;
 }
-.interno .panel, .interno .panel-default {
+.interno .card, .interno .card-default {
 	border-radius: 0;
 	box-shadow: none;
   border-color: #f7f7f7;
@@ -420,7 +420,7 @@ ul.navbar-nav {
 .interno .donacion-col {
 	padding-right: 50px;
 }
-.interno .panel-evento {
+.interno .card-evento {
 	padding: 35px;
 }
 .interno .table .btn-info {padding: 2px 5px;}
@@ -432,7 +432,7 @@ ul.navbar-nav {
 	background: url('../img/bgresumen.png') center no-repeat;
 }
 
-.interno .panel-default .panel-heading {
+.interno .card-default .card-heading {
 	padding: 10px 0;
 	background: transparent;
 	border-color: transparent;
@@ -452,6 +452,9 @@ ul.navbar-nav {
 .interno .col-xs-6.col-md-3 .circular-chart {
 	max-width: 100%;
 }
+.interno .media-body h4 {font-size: 1.15rem;}
+.interno .progress {height: 1.5rem;}
+
 
 /**Sidenav**/
 
@@ -473,7 +476,7 @@ ul.navbar-nav {
 }
 .sidenav a {
   text-decoration: none;
-  font-size: 1.52rem;
+  font-size: 1rem;
   color: #fff;
   display: block;
 	transition: 0.3s all;
@@ -554,7 +557,6 @@ ul.navbar-nav {
 	padding: 12px;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 1;
 	color: #555;
 	text-align: center;
 	background-color: transparent;
@@ -573,6 +575,14 @@ ul.navbar-nav {
 .select {
 	width: 100%;
 	display: block;
+}
+
+.input-group > .custom-select {
+	position: relative;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	width: 100%;
+	margin-bottom: 0;
 }
 
 option {
@@ -829,14 +839,13 @@ footer .row-footer .col-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #ff
  .interno h2.titulo { border-bottom: 3px solid #00e8c1; padding-bottom: 10px; margin-bottom: 0;}
  .interno .btn.btn-twitter.btn-block, .interno .btn.btn-facebook.btn-block, .interno .btn.btn-whatsapp.btn-block, .interno .btn.btn-primary.btn-block {margin-top: 5px;}
  .circular-chart {max-height: 200px;}
-.interno .navbar .btn-success, .registro .navbar .btn-success, .home .navbar .btn-success {margin-top: -85px;}
+.interno .navbar .btn-success, .registro .navbar .btn-success, .home .navbar .btn-success {margin-top: 0px;}
 .interno .subheader .container, .interno .contenido .container {padding: 60px 15px 0;}
 .registro .panel {margin-top: 30px;}
 .interno .panel-donacion {padding: 0px;}
 .interno h3.donacion {margin-top:0px; margin-bottom:0px;}
 .interno .panel {margin-bottom:5px;}
 .interno .numero {margin-right: 10px;}
-.media-body, .media-left, .media-right {display: contents;}
 }
 
 @media (max-width: 576px) {
@@ -877,7 +886,7 @@ footer .row-footer .col-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #ff
 	}
 	.home .categoria { width: 70%; padding: 5px; }
 	.home .tab-content { padding: 0 5px; }
-	.interno .panel-evento {
+	.interno .card-evento {
     padding: 15px;
 	}
 	.home .subheader.subheader-2 {padding: 23% 10% 0px;}
