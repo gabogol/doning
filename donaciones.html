@@ -10,7 +10,10 @@
 
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+    <!--<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -33,6 +36,7 @@
 
 <body class="interno">
 
+    <!--Desde aqui-->
     <div id="sideNav" class="sidenav">
         <ul class="nav">
             <li><a href="">Volver al home</a></li>
@@ -51,43 +55,41 @@
     <!-- Top menu -->
     <nav class="navbar navbar-light" role="navigation">
         <div class="container-fluid">
-            <div class="navbar-header">
                 <a class="navbar-brand" href="#">
                     <h1 class="text-hide">Doning</h1>
                 </a>
-            </div>
         </div>
     </nav>
-    <div class="container pull-right usuario">
+    <div class="container float-right usuario">
         <div class="row">
-            <div class="col-sm-8 col-xs-12 text-right">
+            <div class="col-12 col-md-8 mt-2 text-right">
                 <h4>Nombre de Usuario</h4>
-                <a href="">Editar perfil</a><span> | </span><a href="">Cerrar sesión</a>
+                <a href="" class="usuario-link">Editar perfil</a><span> | </span><a href="" class="usuario-link">Cerrar sesión</a>
             </div>
-            <div class="col-sm-4 col-xs-3 hidden-xs">
+            <div class="col-3 col-md-4 d-none d-md-block">
                 <img src="assets/img/user.svg" class="text-right" alt="" width="60px">
             </div>
         </div>
     </div>
 
-    <div class="contenedor">
+    <div class="contenedor" id="sin-top">
         <div class="subheader">
-            <div class="visible-xs">
-                <button type="button" class="navbar-toggle collapsed" id="openNav">
+            <div class="d-block d-md-none float-right">
+                <button type="button" class="navbar-toggler collapsed" id="openNav">
                     <i class="fa fa-bars fa-3x colored" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="container">
-                <div class="hidden-xs">
+                <nav aria-label="breadcrumb" class="d-none d-md-block mb-5">
                     <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#" class="active">Actividad</a></li>
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active"><a href="#" class="active">Actividad</a></li>
                     </ol>
-                </div>
+                </nav>
                 <div class="container-fluid">
                     <h2 class="titulo">Actividad</h2>
                 </div>
-                <div class="container-fluid hidden-xs">
+                <div class="container-fluid d-none d-md-block">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
@@ -99,53 +101,38 @@
                 </div>
             </div>
         </div>
-        <div class="divider-1 hidden-xs"></div>
-        <div class="contenido" id="sin-top">
+        <div class="divider-1 d-none d-md-block"></div>
+        <!--Hasta aqui-->
+        <div class="contenido">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 donacion-col">
                         <div class="row">
-                            <div class="col-xs-9">
+                            <div class="col-9">
                                 <h3 class="donacion">Donación</h3>
                             </div>
-                            <div class="col-xs-3">
-                                <button class="pull-right btn btn-sm btn-editar" role="button"
+                            <div class="col-3">
+                                <button class="float-right btn btn-sm btn-editar" role="button"
                                     id="editar">Editar</button>
                             </div>
                         </div>
-                        <div class="divider-1 hidden-xs"></div>
-                        <div class="panel panel-default panel-donacion">
-                            <div class="panel-body">
+                        <div class="divider-1 d-none d-sm-block"></div>
+                        <div class="card card-default">
+                            <div class="card-body">
                                 <div class="row">
-                                    <div class="col-sm-3 col-sm-push-9 text-center hidden-xs">
+                                    <div class="col-sm-3 order-md-9 d-none d-sm-block">
                                         <img src="assets/img/causa.png" class="img-fluid" alt="">
                                     </div>
-                                    <div class="divider-0 visible-xs"></div>
-                                    <div class="col-sm-9 col-sm-pull-3">
-                                        <!--table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>Causa:</td>
-                                                    <td>Un lugar en la ciudad</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Donación:</td>
-                                                    <td>$10.000 - Recompensa Kit Doning</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Total cobro:</td>
-                                                    <td>$10.000 - Sin gastos de manipulación</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>-->
+                                    <div class="divider-0 d-none d-sm-block"></div>
+                                    <div class="col-sm-9 order-md-3">
+                                       
                                         <fieldset disabled>
                                             <div class="form-group disabled">
                                                 <div class="row">
                                                     <div class="col-sm-6">
-                                                        <input type="text" class="form-control input-sm"
-                                                            placeholder="Nombre">
+                                                        <input type="text" class="form-control input-sm" placeholder="Nombre">
                                                     </div>
-                                                    <div class="divider-0 visible-xs"></div>
+                                                    <div class="divider-0  d-none d-sm-block"></div>
                                                     <div class="col-sm-6">
                                                         <input type="email" class="form-control input-sm"
                                                             placeholder="Email">
@@ -184,27 +171,25 @@
                         <div class="divider-0"></div>
                         <a href="#" class="btn btn-alert" role="button">DONAR</a>
                         <div class="divider-0"></div>
-                        <div class="row visible-xs">
-                            <div class="col-xs-7"><img src="assets/img/logo-webpay-plus-1.png" class="img-responsive"
-                                    alt=""></div>
-                            <div class="col-xs-3"><img src="assets/img/zup.png" class="text-left" alt=""></div>
+                        <div class="row d-flex d-md-none">
+                            <div class="col-7"><img src="assets/img/logo-webpay-plus-1.png" class="img-responsive" alt=""></div>
+                            <div class="col-3"><img src="assets/img/zup.png" class="text-left" alt=""></div>
                         </div>
                         <div class="divider-0"></div>
                         <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quibusdam illum optio
                             facilis id ea cum excepturi harum ex beatae. Eveniet, repudiandae fugit! Ipsam, quos est
                             voluptatum quo vel fuga?</small>
                     </div>
-                    <hr class="visible-xs">
+                    <hr class="d-none d-sm-block">
                     <div class="col-sm-4">
                         <h3>Información de pago</h3>
                         <div class="divider-0"></div>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quibusdam temporibus soluta
                             velit vero omnis. <br>Perspiciatis expedita numquam dicta itaque dolores eveniet officia,
                             nesciunt tempora distinctio quasi obcaecati culpa iusto?</p>
-                            <div class="row hidden-xs">
-                                    <div class="col-xs-7"><img src="assets/img/logo-webpay-plus-1.png" class="img-responsive"
-                                            alt=""></div>
-                                    <div class="col-xs-3"><img src="assets/img/zup.png" class="text-left" alt=""></div>
+                            <div class="row d-none d-md-flex">
+                                    <div class="col-7"><img src="assets/img/logo-webpay-plus-1.png" class="img-fluid" alt=""></div>
+                                    <div class="col-3"><img src="assets/img/zup.png" class="text-left" alt=""></div>
                                 </div>
                         <hr>
                         <a href="#" class="">Más informacion sobre las responsabilidades</a>
@@ -218,27 +203,29 @@
     <footer>
         <div class="container">
             <div class="row row-footer">
-                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+                <div class="offset-1 col-10 offset-sm-0 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/img/logofooter.svg" class="img-fluid" alt="">
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-9">
                     <div class="row">
                         <div class="col-sm-12">
                             <a href="#" target="_blank"><img src="assets/img/fb.svg" class="social" alt=""></a>
                             <a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
                             <a href="#" target="_blank"><img src="assets/img/ig.svg" class="social" alt=""></a>
                         </div>
-                        <div class="col-sm-12 hidden-xs hidden-sm pull-right">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Somos</a></li>
-                                <li><a href="#" class="active">Causas</a></li>
-                                <li><a href="#">Inscribe una causa</a></li>
-                                <li><a href="#">Términos y condiciones</a></li>
-                                <li><a href="#">Contacto</a></li>
-                            </ul>
-                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 d-none d-md-block">
+                    <ul class="nav justify-content-end mt-3">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Somos</a></li>
+                        <li><a href="#" class="active">Causas</a></li>
+                        <li><a href="#">Inscribe una causa</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="row divider-2">
@@ -249,16 +236,23 @@
         </div>
     </footer>
 
-
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>-->
+
+    <!--[if lt IE 10]>
+     <script src="assets/js/placeholder.js"></script>
+ <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
+
 </body>
 
 </html>

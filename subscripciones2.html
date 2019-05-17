@@ -10,7 +10,10 @@
 
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+    <!--<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -32,34 +35,16 @@
 </head>
 
 <body class="interno">
-    <!--Desde aqui-->
-    <div id="sideNav" class="sidenav">
-        <ul class="nav">
-            <li><a href="">Volver al home</a></li>
-            <li class="active"><a href="actividad.html" target="_self">Actividad</a></li>
-            <li><a href="eventos.html" target="_self">Eventos</a></li>
-            <li><a href="donaciones.html" target="_self">Donaciones directas</a></li>
-            <li><a href="subscripciones.html" target="_self">Subscripciones</a></li>
-            <li><a href="perfil.html" target="_self">Editar Perfil</a></li>
-            <li><a href="#">Cerrar sesión</a></li>
-            <a class="closebtn">
-                <i class="fa fa-times colored" aria-hidden="true"></i>
-            </a>
-        </ul>
-    </div>
+
     <!-- Top menu -->
     <nav class="navbar navbar-light" role="navigation">
         <div class="container-fluid">
-            <div class="navbar-header">
                 <a class="navbar-brand" href="#">
                     <h1 class="text-hide">Doning</h1>
                 </a>
-            </div>
         </div>
     </nav>
-    <div class="container pull-right usuario">
-       
-    </div>
+    
     <div class="contenedor">
         
         <!--Hasta aqui-->
@@ -68,7 +53,7 @@
                 <div class="row">
                     <div class="col-md-8 donacion-col">
                         <h3>Donación</h3>
-                        <a href="#" class="pull-right">Editar</a>
+                        <a href="#" class="float-right">Editar</a>
                         <div class="divider-1"></div>
                         <form>
                             <div class="form-group input-group">
@@ -109,13 +94,13 @@
                                 <input type="text" class="form-control" id="Tarjeta" placeholder="Numero de tarjeta">
                             </div>
                             <div class="row">
-                                <div class="col-sm-6 col-sm-push-6" id="fechaVenc">
+                                <div class="col-sm-6 order-sm-6" id="fechaVenc">
                                     <a data-toggle="tooltip" class="btn"
                                         title="<img src='assets/img/fechavencimiento.png'/>">
                                         <i class="fa fa-question-circle" aria-hidden="true"></i>
                                     </a>
                                 </div>
-                                <div class="col-sm-6 col-sm-pull-6">
+                                <div class="col-sm-6 order-sm-6">
                                     <div class="form-group input-group">
                                         <span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
                                         <input type="text" class="form-control" id="Vencimiento"
@@ -135,10 +120,10 @@
                         <div class="divider-0"></div>
                         <a href="#" class="btn btn-alert" role="button">SIGUIENTE</a>
                         <div class="divider-0"></div>
-                        <div class="row visible-xs">
-                            <div class="col-xs-7"><img src="assets/img/logo-webpay-plus-1.png" class="img-responsive"
+                        <div class="row d-flex d-sm-none">
+                            <div class="col-7"><img src="assets/img/logo-webpay-plus-1.png" class="img-responsive"
                                     alt=""></div>
-                            <div class="col-xs-3"><img src="assets/img/zup.png" class="text-left" alt=""></div>
+                            <div class="col-3"><img src="assets/img/zup.png" class="text-left" alt=""></div>
                             
                         </div>
                         <div class="divider-0"></div>
@@ -147,7 +132,7 @@
                                         <input type="text" class="form-control" placeholder="Clave temporal">
                                         <hr>
                                         <a href="" class="btn btn-info">SUSCRIBIRME</a>
-                                        <div class="divider-1 visible-xs visible-sm"></div>
+                                        <div class="divider-1"></div>
                          
                     </div>
                    
@@ -159,10 +144,10 @@
                             velit vero omnis. <br>Perspiciatis expedita numquam dicta itaque dolores eveniet officia,
                             nesciunt tempora distinctio quasi obcaecati culpa iusto?</p>
                       
-                        <div class="row hidden-xs">
-                                    <div class="col-xs-7"><img src="assets/img/logo-webpay-plus-1.png" class="img-responsive"
+                        <div class="row d-none d-sm-block">
+                                    <div class="col-7"><img src="assets/img/logo-webpay-plus-1.png" class="img-responsive"
                                             alt=""></div>
-                                    <div class="col-xs-3"><img src="assets/img/zup.png" class="text-left" alt=""></div>
+                                    <div class="col23"><img src="assets/img/zup.png" class="text-left" alt=""></div>
                                 </div>
                           <hr>
                         <a href="#" class="">Más informacion sobre las responsabilidades</a>
@@ -176,27 +161,29 @@
     <footer>
         <div class="container">
             <div class="row row-footer">
-                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-md-3 col-lg-3">
+                <div class="offset-1 col-10 offset-sm-0 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/img/logofooter.svg" class="img-fluid" alt="">
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-9">
                     <div class="row">
                         <div class="col-sm-12">
                             <a href="#" target="_blank"><img src="assets/img/fb.svg" class="social" alt=""></a>
                             <a href="#" target="_blank"><img src="assets/img/tw.svg" class="social" alt=""></a>
                             <a href="#" target="_blank"><img src="assets/img/ig.svg" class="social" alt=""></a>
                         </div>
-                        <div class="col-sm-12 hidden-xs hidden-sm pull-right">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Somos</a></li>
-                                <li><a href="#" class="active">Causas</a></li>
-                                <li><a href="#">Inscribe una causa</a></li>
-                                <li><a href="#">Términos y condiciones</a></li>
-                                <li><a href="#">Contacto</a></li>
-                            </ul>
-                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 d-none d-md-block">
+                    <ul class="nav justify-content-end mt-3">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Somos</a></li>
+                        <li><a href="#" class="active">Causas</a></li>
+                        <li><a href="#">Inscribe una causa</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="row divider-2">
@@ -210,12 +197,19 @@
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>-->
+
+    <!--[if lt IE 10]>
+     <script src="assets/js/placeholder.js"></script>
+ <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <!--[if lt IE 10]>
-         <script src="assets/js/placeholder.js"></script>
-     <![endif]-->
 
 </body>
 
