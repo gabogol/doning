@@ -501,13 +501,13 @@ ul.navbar-nav {
 
 /***** Buttons *****/
 .btn {font-size: .9rem;}
-.btn-facebook { color: #fff; background-color: #395692; border-color: #395692; transition: ease-in-out .5s; border-radius: 0; }
+.btn-facebook { color: #fff !important; background-color: #395692; border-color: #395692; transition: ease-in-out .5s; border-radius: 0; }
 .btn-facebook:hover, .btn-facebook:active, .btn-facebook:focus {color: #fff; background-color: #27447f; border-color: #395692; } 
-.btn-twitter { color: #fff; background-color: #35ade4; border-color: #35ade4; transition: ease-in-out .5s; border-radius: 0; }
+.btn-twitter { color: #fff !important; background-color: #35ade4; border-color: #35ade4; transition: ease-in-out .5s; border-radius: 0; }
 .btn-twitter:hover, .btn-twitter:active, .btn-twitter:focus {color: #fff; background-color: #2797cb; border-color: #35ade4; }
-.btn-whatsapp { color: #fff; background-color: #25d366; border-color: #25d366; transition: ease-in-out .5s; border-radius: 0; }
+.btn-whatsapp { color: #fff !important; background-color: #25d366; border-color: #25d366; transition: ease-in-out .5s; border-radius: 0; }
 .btn-whatsapp:hover, .btn-whatsapp:active, .btn-whatsapp:focus {color: #fff; background-color: #1cad52; border-color: #46534b; }
-.btn-google { color: #fff; background-color: #de4b39; border-color: #de4b39; transition: ease-in-out .5s; border-radius: 0; }
+.btn-google { color: #fff !important; background-color: #de4b39; border-color: #de4b39; transition: ease-in-out .5s; border-radius: 0; }
 .btn-google:hover, .btn-google:active, .btn-google:focus {color: #fff; background-color: #bb3c2d; border-color: #de4b39; } 
 .fa-2x {font-size: 1.3em;}
 .link-1 { padding: 0 15px; color:#888; }
@@ -554,7 +554,7 @@ ul.navbar-nav {
 	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 .input-group-addon {
-	padding: 12px;
+	padding: 8px;
 	font-size: 14px;
 	font-weight: 400;
 	color: #555;
@@ -853,7 +853,7 @@ footer .row-footer .col-2.col-sm-2.col-md-1.col-lg-1 {border-left: 1px solid #ff
 	h2 {font-size: 30px;}
 	h4 {font-size: 16px;}
 	.navbar-brand {
-		width: 140px;
+		width: 174px;
 	}
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: -15px; }
 	.interno .usuario h4 {

@@ -64,5 +64,15 @@ jQuery(document).ready(function() {
         element.classList.toggle("ancho");;
     }*/
     
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 50) {
+            $(".col-sticky").addClass("pegado");
+        } else {
+            $(".col-sticky").removeClass("pegado");
+        }
+    });
+    
 	
 });
